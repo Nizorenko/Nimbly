@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimbly Technologies</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="section section_header">
+      <div class="container">
+        <div class="header">
+          <a href="#"><img src="./images/nimbly-logo.png" alt="Logo company" /></a>
+
+          <nav>
+            <ul class="navigation">
+              <li><a class="navigation-link" href="#">Features</a></li>
+              <li><a class="navigation-link" href="#">How it works</a></li>
+              <li><a class="navigation-link" href="#">Industries</a></li>
+              <li><a class="navigation-link" href="#">Insight</a></li>
+            </ul>
+          </nav>
+          <div class="sign_in-and-btn">
+            <button class="sign-in" type="button">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#frame-icon"></use>
+              </svg>
+              Sign In
+            </button>
+
+            <a class="btn-green" href="#request-form">Request Demo</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Секция с главным заголовком и логотипами корпораций -->
+
+      <section class="section">
+        <div class="container">
+          <div class="heading-main">
+            <div class="heading-grid">
+              <div>
+                <h1 class="h2">Make your operations Easier and Efficient with <span>Nimbly</span></h1>
+                <p class="heading-p">
+                  Digitize your business operations and gain real-time analytics on your team progress anytime,
+                  anywhere.
+                </p>
+              </div>
+              <div class="heading-btn">
+                <a class="btn-green" href="#request-form">Request Demo</a>
+                <a class="link-phone" href="tel:+79228784286">
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#phone-icon"></use>
+                  </svg>
+                  Free Consultation
+                </a>
+              </div>
+            </div>
+
+            <img class="heading-img" src="./images/hero.png" alt="Hero" width="564" height="580" />
+          </div>
+          <div class="list-heading">
+            <h2 class="margin_indent">Trusted by 10,000+ the world’s fastest growing companies including:</h2>
+
+            <ul class="list-logo">
+              <li>
+                <a href="#"><img src="./images/kfs.png" alt="Logo Kfs" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/cargill.png" alt="Logo Cargill" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/7elven.png" alt="Logo 7elven" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/underarmour.png" alt="Logo Underarmour" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/dq.png" alt="Logo Dq" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./images/toto.png" alt="Logo Toto" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция с видео -->
+
+      <section class="section">
+        <div class="container-mini">
+          <div class="introductory-video">
+            <span class="span-green">WAYS NIMBLY HELPS YOU</span>
+            <h2 class="margin_indent">Helping you maximize operations management with digitization</h2>
+
+            <p class="margin_indent">
+              Nimbly will digitize your business operations so you'll get real-time analytics on your team's progress
+              anytime, anywhere even without an internet connection.
+            </p>
+
+            <video
+              class="video"
+              width="675"
+              height="380"
+              controls="controls"
+              src="./images/Morgi.mp4"
+              type="video/mp4"
+              poster="./images/Morgi.jpg"
+            ></video>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция со списком элементов демонстрация приложения 
+
+      <section class="section">
+        <div class="container-mini">
+          <div class="demo-application">
+            <span class="span-green">OUR FEATURES</span>
+            <h2 class="margin_indent">Discover How Our Features Can Simplify Your Work Flow</h2>
+
+            <!-- Навигация списка 
+            <nav>
+              <ul class="list-app">
+                <li>
+                  <a class="list-app__nav" href="#Audits">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#real-time-icon"></use>
+                    </svg>
+                    <span>Real-time Audits</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="list-app__nav" href="#Easy">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#audits-icon"></use>
+                    </svg>
+                    <span>Easy Digital Audits</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="list-app__nav" href="#Issue">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#issue-icon"></use>
+                    </svg>
+                    <span>Issue Tracker</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="list-app__nav" href="#Robust">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#validation-icon"></use>
+                    </svg>
+                    <span>Robust Validation</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="list-app__nav" href="#Report">
+                    <svg width="32" height="32">
+                      <use href="./images/icons.svg#analytics-icon"></use>
+                    </svg>
+                    <span>Report & Analytics</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- Карточка элемента списка 
+
+                <ul>
+                  <li>
+                    <div id="Audits">
+                      <p class="margin_indent">
+                        You can optimize inspections with visual promoting guides to ensure products and services are being
+                        delivered consistently across the company.<a class="link-green" href="#">Learn more.</a>
+                      </p>
+                      <img src="./images/Function_1.png" alt="Application demonstration" width="837" height="683" />
+                    </div>
+                  </li>
+
+                  <!-- <li>
+                <div id="Easy">
+                  <p>
+                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
+                    according to your SLA. <a href="">Learn more.</a>
+                  </p>
+                  <img src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
+                </div>
+              </li>
+
+              <li>
+                <div id="Issue">
+                  <p>
+                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
+                    according to your SLA. <a href="">Learn more.</a>
+                  </p>
+                  <img src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
+                </div>
+              </li>
+
+              <li>
+                <div id="Robust">
+                  <p>
+                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
+                    according to your SLA. <a href="">Learn more.</a>
+                  </p>
+                  <img src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
+                </div>
+              </li>
+
+              <li>
+                <div id="Report">
+                  <p>
+                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
+                    according to your SLA. <a href="">Learn more.</a>
+                  </p>
+                  <img src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
+                </div>
+              </li> 
+                </ul>
+
+                <ul class="statistics">
+                  <p class="statistics-p margin_indent">
+                    We support various organizations to fundementally change the way we operate for a better future.
+                  </p>
+                  <li class="statistics-list">
+                    <span class="statistics-interest">57,000</span>
+                    <span class="statistics-name">Hours your saved</span>
+                  </li>
+
+                  <li class="statistics-list">
+                    <span class="statistics-interest">59%</span>
+                    <span class="statistics-name">Inspection cost saved</span>
+                  </li>
+
+                  <li class="statistics-list">
+                    <span class="statistics-interest">86%</span>
+                    <span class="statistics-name">Increase in productivity</span>
+                  </li>
+                </ul> 
+          </div>
+        </div>
+      </section>
+
+      <!-- Описаине преимущества данного ПО -->
+
+      <section class="section">
+        <div class="container">
+          <div class="Steps-work_bloc-1">
+            <div class="Steps-work-1">
+              <span class="span-green">HOW IT WORKS</span>
+              <h2>Fast, easy steps <br />to start Operational Excellence</h2>
+              <p>
+                Nimbly works to speed up your work,<br />
+                you won't spend a lot of time getting started.
+              </p>
+              <ul>
+                <li>
+                  <div>
+                    <h3 class="h3">Know what to prioritize</h3>
+                    <p>
+                      Reports show you which projects are most<br />
+                      profitable and which ones drain your team’s time.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <div>
+                    <h3>Make it clear with digitization</h3>
+                    <p>
+                      Go paperless to digitize your checklists and <br />
+                      automate your reporting.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+
+              <a class="link-streak" href="#"
+                >See how Nimbly works
+                <svg width="25" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+
+            <img
+              class="Steps-work_bloc-1-img"
+              src="./images/Photo_gerl.png"
+              alt="Photo Gerl"
+              width="612"
+              height="693"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="Steps-work_bloc-2">
+            <img
+              class="Steps-work_bloc-2-img"
+              src="./images/industries.png"
+              alt="Photo Industries"
+              width="603"
+              height="775"
+            />
+            <div class="Steps-work-2">
+              <span class="span-green"> INDUSTRIES </span>
+              <h2>Desk work or field work, we’ve covered</h2>
+              <p>Businesses in more than 100 different industries track and automate with Nimbly.</p>
+
+              <ul class="Steps-work-2_ul">
+                <li class="Steps-work-2_list">
+                  <a class="Steps-work-2_link" href="#">
+                    <svg width="33" height="32">
+                      <use href="./images/icons.svg#food-icon"></use>
+                    </svg>
+                    Food & Beverage
+                    <svg width="12" height="20">
+                      <use href="./images/icons.svg#arrow-list"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="Steps-work-2_list">
+                  <a class="Steps-work-2_link" href="#">
+                    <svg width="33" height="32">
+                      <use href="./images/icons.svg#shop-icon"></use>
+                    </svg>
+                    Retail
+                    <svg width="12" height="20">
+                      <use href="./images/icons.svg#arrow-list"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="Steps-work-2_list">
+                  <a class="Steps-work-2_link" href="#">
+                    <svg width="33" height="32">
+                      <use href="./images/icons.svg#builder-icon"></use>
+                    </svg>
+                    Manufacturing
+                    <svg width="12" height="20">
+                      <use href="./images/icons.svg#arrow-list"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="Steps-work-2_list">
+                  <a class="Steps-work-2_link" href="#">
+                    <svg width="33" height="32">
+                      <use href="./images/icons.svg#flower-icon"></use>
+                    </svg>
+                    Agriculture
+                    <svg width="12" height="20">
+                      <use href="./images/icons.svg#arrow-list"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <a class="link-streak" href="#"
+                >Select your Industry
+                <svg width="25" height="24">
+                  <use href="./images/icons.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Коментарии пользователей -->
+
+      <section class="section">
+        <div class="container">
+          <div class="Comment__block-header">
+            <span class="span-green">CUSTOMER SAY</span>
+            <h2 class="margin_indent">See how businesses like yours found answers with Nimbly</h2>
+            <p class="margin_indent">
+              From start-ups to enterprises, we’ve helped transform operations for clients from various industrial
+              backgrounds.
+            </p>
+          </div>
+          <ul class="comment">
+            <li>
+              <article class="comment-card">
+                <img
+                  class="comment-photo"
+                  src="./images/User_1.png"
+                  alt="Tondi Sihombing photo"
+                  width="436"
+                  height="509"
+                />
+
+                <div>
+                  <p class="comment-p">
+                    Nimbly speeds up our issue resolution in Kopi Kenangan. With Nimbly's issue tracker, the
+                    headquarters can receive real-time notifications from outlets and follow them up instantly. Nimbly
+                    not only reduces paper use, but also simplifies knowledge sharing, smoothens the information flow,
+                    and provides seamless access to data more.
+                  </p>
+                  <div class="user-card">
+                    <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
+                    <span class="user-card__Name">Tondi Sihombing</span>
+                    <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="comment-card">
+                <img
+                  class="comment-photo"
+                  src="./images/User_1.png"
+                  alt="Tondi Sihombing photo"
+                  width="436"
+                  height="509"
+                />
+
+                <div>
+                  <p class="comment-p">
+                    Nimbly speeds up our issue resolution in Kopi Kenangan. With Nimbly's issue tracker, the
+                    headquarters can receive real-time notifications from outlets and follow them up instantly. Nimbly
+                    not only reduces paper use, but also simplifies knowledge sharing, smoothens the information flow,
+                    and provides seamless access to data more.
+                  </p>
+
+                  <div class="user-card">
+                    <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
+                    <span class="user-card__Name">Tondi Sihombing</span>
+                    <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="comment-card">
+                <img
+                  class="comment-photo"
+                  src="./images/User_1.png"
+                  alt="Tondi Sihombing photo"
+                  width="436"
+                  height="509"
+                />
+
+                <div>
+                  <p class="comment-p">
+                    Nimbly speeds up our issue resolution in Kopi Kenangan. With Nimbly's issue tracker, the
+                    headquarters can receive real-time notifications from outlets and follow them up instantly. Nimbly
+                    not only reduces paper use, but also simplifies knowledge sharing, smoothens the information flow,
+                    and provides seamless access to data more.
+                  </p>
+
+                  <div class="user-card">
+                    <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
+                    <span class="user-card__Name">Tondi Sihombing</span>
+                    <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Форма для заполнения *Request Demo* -->
+
+      <section class="section">
+        <div class="container-mini">
+          <div class="form__header-center">
+            <h2 class="margin_indent" id="request-form">
+              Empower your team today. Get started with intelligent workflows
+            </h2>
+            <p class="margin_indent">Nimbly brings you new opportunities through seamless digitization</p>
+          </div>
+
+          <form class="form-grid" action="#" method="#">
+            <ul class="form-grid-ul">
+              <li>
+                <label class="form-grid__label" for="user_name">Full Name :</label>
+                <input class="input" type="text" placeholder="Enter your full name" name="user_name" id="user_name" />
+              </li>
+
+              <li>
+                <label class="form-grid__label" for="user_mail">Email Address :</label>
+                <input
+                  class="input"
+                  type="mail"
+                  placeholder="Enter your email address"
+                  name="user_mail"
+                  id="user_mail"
+                />
+              </li>
+
+              <li>
+                <label class="form-grid__label" for="user_phone">Mobile :</label>
+                <input class="input" type="tel" placeholder="Enter your mobile" name="user_phone" id="user_phone" />
+              </li>
+
+              <li>
+                <label class="form-grid__label" for="user_company">Company Name :</label>
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Enter your company name"
+                  name="user_company"
+                  id="user_company"
+                />
+              </li>
+
+              <li>
+                <label class="form-grid__label" for="user_tittle">Tittle :</label>
+                <input class="input" type="text" placeholder="Enter your tittle" name="user_tittle" id="user_tittle" />
+              </li>
+
+              <li>
+                <label class="form-grid__label" for="user_tittle">Industry :</label>
+
+                <select class="input">
+                  <option value="">Select Industry</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                </select>
+              </li>
+              <button type="submit" class="btn-green">Request Demo</button>
+
+              <!-- Можно так ваще?) -->
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <div class="section-footer">
+        <div class="container">
+          <div class="footer">
+            <div class="footer-qr-code">
+              <a href="#"><img src="./images/nimbly-logo-footer.png" alt="nimbly-logo-footer" /> </a>
+              <p class="section-paragraph">
+                Digitize your business operations and gain real-time analytics on your team progress anytime, anywhere.
+              </p>
+
+              <img src="./images/QR-Code.png" alt="QR-Code" />
+            </div>
+            <div class="footer_nav">
+              <section>
+                <h3 class="section-heading">Nimbly</h3>
+
+                <ul>
+                  <li class="footer-link"><a href="#">About Us</a></li>
+                  <li class="footer-link"><a href="#">Features</a></li>
+                  <li class="footer-link"><a href="#">Industries</a></li>
+                  <li class="footer-link"><a href="#">How it Works</a></li>
+                  <li class="footer-link"><a href="#">Insight</a></li>
+                </ul>
+              </section>
+
+              <section>
+                <h3 class="section-heading">More</h3>
+
+                <ul>
+                  <li class="footer-link"><a href="#">Blogs</a></li>
+                  <li class="footer-link"><a href="#">Contact Us</a></li>
+                  <li class="footer-link"><a href="#">FAQ</a></li>
+                  <li class="footer-link"><a href="#">Privacy Policy</a></li>
+                  <li class="footer-link"><a href="#">Terms & Condition</a></li>
+                </ul>
+              </section>
+
+              <div>
+                <ul class="news-grid">
+                  <li>
+                    <h3 class="section-heading">Indonesian Office</h3>
+                    <p class="section-paragraph">
+                      WeWork, Noble House Jl. Dr. Ide Anak Agung Gde Agung DKI Jakarta 12950
+                    </p>
+                  </li>
+
+                  <li>
+                    <h3 class="section-heading">US Office</h3>
+                    <p class="section-paragraph">2001 Ross Avenue Suite #700-119 Dallas, TX 75291</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="news-grid">
+                  <li>
+                    <h3 class="section-heading">Singapore Office</h3>
+                    <p class="section-paragraph">100 Peck Seah Street PS100 #08-14 Singapore 079333</p>
+                  </li>
+
+                  <li>
+                    <h3 class="section-heading">Colombia Office</h3>
+                    <p class="section-paragraph">Calle 52 B # 74 A 32 Bogotá - Colombia</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-copyright">
+        <div class="container">
+          <div class="Copyright">
+            <p class="section-paragraph">Copyright © 2021 Nimbly App. All rights reserved.</p>
+            <p class="section-paragraph order">
+              We are ISO 27001 certified, assuring information security is managed with the highest standards.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
