@@ -237,7 +237,7 @@
 }
 
 .list-app {
-  display: grid;
+  display: none;
   grid-template-columns: auto auto auto auto auto;
 
   justify-content: center;
@@ -286,18 +286,31 @@
   background: rgba(255, 255, 255, 1);
 }
 
+.Audits-img {
+  max-width: 837px;
+  min-width: 320px;
+  width: 100%;
+  height: auto;
+}
+
 .subpage img {
   max-width: 837px;
   height: auto;
   margin-bottom: 14px;
 }
 
+@media (min-width: 1051px) {
+  .list-app {
+    display: grid;
+  }
+}
+
 /* Статистика */
 
 .statistics {
   display: grid;
-  grid-template-columns: auto auto auto;
-  column-gap: 120px;
+  grid-template-columns: auto;
+  gap: 40px;
 
   max-width: 880px;
   margin: 0 auto;
@@ -306,7 +319,6 @@
 
 .statistics-p {
   text-align: center;
-  grid-column: span 3;
 }
 
 .statistics-list {
@@ -330,6 +342,16 @@
   font-weight: 400;
   text-transform: none;
   color: #333333;
+}
+
+@media (min-width: 650px) {
+  .statistics {
+    grid-template-columns: auto auto auto;
+  }
+
+  .statistics-p {
+    grid-column: span 3;
+  }
 }
 
 /*  Описаине преимущества данного ПО  Блок № 1 */
