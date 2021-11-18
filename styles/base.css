@@ -9,6 +9,9 @@ html {
 *:after {
   box-sizing: inherit;
 }
+body._lock {
+  overflow: hidden;
+}
 
 .section {
   padding-top: 50px;
@@ -19,6 +22,7 @@ html {
   background-color: #f3fbf6;
   padding-top: 15px;
   padding-bottom: 15px;
+  transition: transform 0.4s linear;
 }
 
 .section-footer {
@@ -160,7 +164,27 @@ ul {
   margin-bottom: 12px;
 }
 
+/* Size */
+
+.--size-input {
+  height: 55px;
+}
+
+@media (max-width: 1050px) {
+  .btn-green._btn-headerMobail {
+    padding: 10px 12px;
+  }
+  .section_header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
 @media (min-width: 1051px) {
+  ._btn-headerMobail {
+    display: none;
+  }
   h2 {
     font-size: 48px;
     line-height: 72px;

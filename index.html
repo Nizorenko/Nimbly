@@ -13,20 +13,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="valuePaddingLock">
     <header class="section section_header">
-      <div class="container">
+      <div class="container fix">
         <div class="header">
-          <a href="#"><img src="./images/nimbly-logo.png" alt="Logo company" /></a>
-
-          <nav>
+          <a href="#"><img class="header-logo" src="./images/nimbly-logo.png" alt="Logo company" /></a>
+          <button class="svg-header">
+            <svg class="" width="30" height="30">
+              <use href="./images/icons.svg#frame-icon"></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
             <ul class="navigation">
               <li><a class="navigation-link" href="#">Features</a></li>
-              <li><a class="navigation-link" href="#">How it works</a></li>
-              <li><a class="navigation-link" href="#">Industries</a></li>
+
+              <li>
+                <a class="navigation-link" href="#">How it works</a>
+              </li>
+
+              <li>
+                <a class="navigation-link" href="#">Industries</a>
+              </li>
+
               <li><a class="navigation-link" href="#">Insight</a></li>
             </ul>
+            <a class="btn-green _btn-headerMobail" href="#request-form">Request Demo</a>
           </nav>
+
           <div class="sign_in-and-btn">
             <button class="sign-in" type="button">
               <svg width="24" height="24">
@@ -37,6 +50,11 @@
 
             <a class="btn-green" href="#request-form">Request Demo</a>
           </div>
+
+          <button type="button" class="menu__icon">
+            burger menu
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
@@ -639,5 +657,70 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <h3 class="popup__header">Need to deliver your cargo? We can help!</h3>
+          <p class="popup__paragraph">Fill a little form and we will call you back!</p>
+
+          <form class="popup__form" action="#" method="#">
+            <label for="You_name">
+              <svg width="15" height="15">
+                <use href="./images/icons.svg#user-popup-icon"></use>
+              </svg>
+            </label>
+            <input
+              class="popup__form-input --size-input"
+              type="text"
+              placeholder="Your name"
+              name="name_user"
+              id="name_user"
+            />
+
+            <label for="fone_user">
+              <svg width="15" height="15">
+                <use href="./images/icons.svg#phone-popup-icon"></use>
+              </svg>
+            </label>
+
+            <input
+              class="popup__form-input --size-input"
+              type="tel"
+              placeholder="Your phone"
+              name="phone_user"
+              id="phone_user"
+            />
+
+            <label for="mail_user">
+              <svg width="15.195" height="10.52">
+                <use href="./images/icons.svg#mail-icon"></use>
+              </svg>
+            </label>
+            <input
+              class="popup__form-input --size-input"
+              type="mail"
+              placeholder="Enter your email address"
+              name="mail_user"
+              id="mail_user"
+            />
+          </form>
+          <button class="btn-green margin-btn">Call me back</button>
+          <address class="popup__address">
+            <span>Our address</span>
+            <span class="color">New York, Street, ZIP code</span>
+
+            <span>Phone</span>
+            <a href="tel:+7 (8142) 33 22 11"> 8 (8142) 33 22 11</a>
+            <span>Email</span>
+            <a href="mailto:nizorenkolist@gmail.com"> nizorenkolist@gmail.com </a>
+          </address>
+        </div>
+        <!-- /.modal__content -->
+      </div>
+      <!-- /.modal__inner -->
+    </div>
+    <!-- /.modal -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
