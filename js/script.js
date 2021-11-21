@@ -140,7 +140,16 @@ if (popup && popup__body) {
                
     )}
     
- 
-
-   
-
+    const swiper = new Swiper('.swiper', {
+        
+        pagination: {
+          el: '.pagination',
+          clickable: true,
+          bulletClass: 'pagination-bullet',
+          bulletElement: 'li',
+          modifierClass:'pagination-',
+          bulletActiveClass: 'pagination-active'
+        }
+      
+      });
+      

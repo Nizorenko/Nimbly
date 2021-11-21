@@ -653,8 +653,6 @@
 .comment-card {
   display: grid;
   grid-template-columns: auto;
-
-  align-items: center;
 }
 
 .comment-p {
@@ -671,6 +669,7 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
+  column-gap: 22px;
 }
 
 .user-card img {
@@ -1019,4 +1018,33 @@ select:focus {
 
 .popup__address .color {
   color: #13ab4e;
+}
+
+.pagination {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  justify-content: center;
+  top: 94%;
+  align-items: center;
+}
+
+.pagination-bullet {
+  height: 11px;
+  width: 11px;
+  margin: 0 10px;
+  border-radius: 30px;
+  border-color: #13ab4e;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+.pagination-active {
+  background-color: #13ab4e;
+  width: 15px;
+  height: 15px;
+  margin: 0 10px;
+  border-radius: 50%;
 }
