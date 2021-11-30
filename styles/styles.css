@@ -192,7 +192,7 @@
 
   .menu-nav {
     position: fixed;
-    top: -100%;
+    top: -80%;
     right: 0;
 
     max-height: 100%;
@@ -200,7 +200,7 @@
     border-radius: 0 0 0 40px;
     background-color: rgb(243, 251, 246);
     padding: 100px 30px 30px 30px;
-    transition: top 0.5s ease 0s;
+    transition: top 0.8s ease 0s;
     overflow: auto;
   }
   ._active {
@@ -521,7 +521,7 @@
   display: grid;
   grid-template-columns: auto;
   gap: 40px;
-  align-items: center;
+
   justify-items: center;
 }
 
@@ -533,10 +533,14 @@
 
 .Steps-work_bloc-1-img {
   max-width: 612px;
-  min-width: 320px;
+  min-width: 500px;
   width: 100%;
   height: auto;
-  padding: 0 25px;
+  padding-right: 25px;
+}
+
+.Steps-work-1_paragraph {
+  margin-right: 50px;
 }
 
 @media (min-width: 1051px) {
@@ -551,14 +555,13 @@
   display: grid;
   grid-template-columns: auto;
   gap: 40px;
-  align-items: center;
+
   justify-items: center;
 }
 
 .Steps-work-2 {
   display: grid;
-  grid-template-rows: auto auto auto 1fr auto;
-  gap: 10px;
+  grid-template-rows: auto auto 1fr auto;
 }
 
 .Steps-work_bloc-2-img {
@@ -574,13 +577,14 @@
   display: grid;
   grid-template-rows: auto auto auto auto;
   gap: 60px;
+  margin-top: 15px;
 }
 
 .Steps-work-2_ul + .link-streak {
   margin-top: 70px;
 }
 
-.Steps-work-2_link {
+.Steps-work-2_button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 13px;
@@ -591,6 +595,12 @@
   font-weight: 500;
   color: #333333;
   transition: 0.3s;
+  border: none;
+  background-color: none;
+  background: none;
+  cursor: pointer;
+  justify-items: start;
+  width: 100%;
 }
 
 .Steps-work-2_link:hover {
@@ -600,6 +610,8 @@
 .Steps-work-2_list {
   padding-left: 15px;
   position: relative;
+  align-content: center;
+  display: grid;
 }
 
 .Steps-work-2_list::after {
@@ -625,7 +637,6 @@
 
   .Steps-work-2 {
     order: 1;
-    gap: 0;
   }
 
   .Steps-work-2_link {
@@ -652,6 +663,7 @@
 
 .comment-card {
   display: grid;
+
   grid-template-columns: auto;
 }
 
@@ -662,9 +674,8 @@
 }
 
 .comment-photo {
-  display: none;
+  height: auto;
 }
-
 .user-card {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -694,7 +705,7 @@
   }
 
   .comment-card {
-    grid-template-columns: auto auto;
+    grid-template-columns: 38% 1fr;
     gap: 64px;
   }
 
@@ -702,10 +713,6 @@
     font-size: 24px;
     line-height: 42px;
     font-weight: 400;
-  }
-
-  .comment-photo {
-    display: block;
   }
 
   .user-card__Name {
@@ -1020,31 +1027,87 @@ select:focus {
   color: #13ab4e;
 }
 
+/* Слайдер коментарии */
+
 .pagination {
   display: flex;
-  position: absolute;
-  z-index: 5;
-  left: 50%;
-  justify-content: center;
-  top: 94%;
+
+  list-style: none;
   align-items: center;
+  align-content: center;
+}
+
+.nav-arrow-pagination {
+  display: flex;
+  gap: 10px;
+  margin-top: 35px;
+  justify-content: center;
 }
 
 .pagination-bullet {
-  height: 11px;
-  width: 11px;
-  margin: 0 10px;
-  border-radius: 30px;
-  border-color: #13ab4e;
-  border-width: 2px;
-  border-style: solid;
+  height: 12px;
+  width: 12px;
+  margin: 0 12px;
+  background-color: #13ab4d65;
+  border-radius: 50%;
   cursor: pointer;
+  z-index: 3;
 }
 
 .pagination-active {
   background-color: #13ab4e;
-  width: 15px;
-  height: 15px;
-  margin: 0 10px;
-  border-radius: 50%;
+}
+
+.comments-arrow-prev {
+  transform: rotate(0.5turn);
+}
+
+.comments-arrow-next,
+.comments-arrow-prev {
+  cursor: pointer;
+  color: #13ab4de8;
+}
+
+.comments-arrow-next:hover,
+.comments-arrow-prev:hover {
+  color: #13ab4e;
+}
+
+.swiper-photo {
+  display: none;
+  margin: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-text {
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 1051px) {
+  .swiper-photo {
+    display: block;
+  }
+
+  .nav-arrow-pagination {
+    justify-content: left;
+  }
+}
+
+/* Accordion  */
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-p {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 52px;
+  margin-right: 18px;
+}
+
+.accordion-item.is-open .accordion-content {
+  display: block;
 }
