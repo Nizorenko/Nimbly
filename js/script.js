@@ -22,8 +22,8 @@ const myMobile = {
 
 //Открывыет, закрывает панель навигации.
 
-const menuNav = document.querySelector(".menu-nav");
-const iconMenu = document.querySelector(".menu__icon");
+const menuNav = document.querySelector(".header__nav");
+const iconMenu = document.querySelector(".header__burgerMenu");
 
 if (iconMenu) {
   iconMenu.addEventListener("click", function (e) {
@@ -34,9 +34,9 @@ if (iconMenu) {
 
 // Убирает при скроле панель навигации а так же меню навигации при скроле вверх вниз
 
-let lastScroll = 0;
+const lastScroll = 0;
 // const deafaultOffset = 200;
-const header = document.querySelector(".section_header");
+const header = document.querySelector(".header__section");
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains("hide");
@@ -56,14 +56,14 @@ window.addEventListener("scroll", () => {
   lastScroll = scrollPosition();
 });
 
-// Открывает и закрывает Sign-in ПК И Mobile версия.
+// Открывает и закрывает hedaer__authorization ПК И Mobile версия.
 
-const btnLoginPC = document.querySelector(".sign-in");
-const btnLoginMobail = document.querySelector(".svg-header");
+const btnLoginPC = document.querySelector(".hedaer__authorization");
+const btnLoginMobail = document.querySelector(".header__iconMobil");
 const popup = document.querySelector(".popup");
 const popup__body = document.querySelector(".popup__body");
-let valuePadding = window.innerWidth - document.querySelector(".valuePaddingLock").offsetWidth + "px";
-const menu_nav_header = document.querySelector(".section_header");
+const valuePadding = window.innerWidth - document.querySelector(".js-value__padding").offsetWidth + "px";
+const menu_nav_header = document.querySelector(".header__section");
 
 if (btnLoginPC && btnLoginMobail) {
   btnLoginPC.addEventListener("click", function (e) {
@@ -103,7 +103,7 @@ if (popup && popup__body) {
   });
 }
 
-const swiperPhoto = new Swiper(".swiper-photo", {
+const swiperPhoto = new Swiper(".js-swiper__photo", {
   autoHeight: true,
   simulateTouch: false,
   // slideClass:
@@ -111,6 +111,10 @@ const swiperPhoto = new Swiper(".swiper-photo", {
   fadeEffect: {
     crossFade: true,
   },
+  navigation: {
+    prevEl: ".comments-arrow-prev",
+    nextEl: ".comments-arrow-next",
+  },
 
   pagination: {
     el: ".pagination",
@@ -122,10 +126,10 @@ const swiperPhoto = new Swiper(".swiper-photo", {
   },
 });
 
-const swiperText = new Swiper(".swiper-text", {
+const swiperText = new Swiper(".js-swiper__text", {
   navigation: {
-    nextEl: ".comments-arrow-next",
     prevEl: ".comments-arrow-prev",
+    nextEl: ".comments-arrow-next",
   },
 
   autoHeight: true,
@@ -144,113 +148,61 @@ const swiperText = new Swiper(".swiper-text", {
   },
 });
 
-//  function isElement(value) {
-//     return value instanceof Element;
-//   }
-
-//   const accordionList = document.querySelectorAll(".accordion");
-
-//   function initAccordion(accordion) {
-//     function handleClick(event) {
-
-//       const target = event.target;
-
-//       if (isElement(target) && target.closest(".Steps-work-2_button")) {
-
-//         const cardList = accordion.querySelectorAll(".accordion-item");
-//         const cardListArray = Array.from(cardList);
-//         const clickedCard = target.closest(".accordion-item");
-
-//         function closeCard(card) {
-
-//         card.classList.remove("is-open");
-//         }
-//         clickedCard.classList.toggle("is-open");
-
-//         cardList.forEach((card) => {
-//           if (
-//             cardListArray.indexOf(card) !== cardListArray.indexOf(clickedCard)
-//           ) {
-//             closeCard(card);
-//           }
-//         });
-//       }
-//     }
-//     accordion.addEventListener("click", handleClick);
-//   }
-//   accordionList.forEach(initAccordion);
-
-const acordions = document.querySelectorAll(".accordion");
-
-acordions.forEach((acordion) => {
-  acordion.addEventListener("click", (event) => {
-    if (event.target.classList.contains("Steps-work-2_button")) {
-      const AcordionClick = event.target.closest(".accordion-item");
-
-      const cardAcordion2 = document.querySelectorAll(".accordion-item");
-
-      cardAcordion2.forEach((acordionCard) => {
-        if (acordionCard !== AcordionClick) {
-          acordionCard.classList.remove("is-open");
-        }
-      });
-      AcordionClick.classList.toggle("is-open");
-    }
+const animatedOpen = (contentElement, duration = 500) => {
+  anime({
+    targets: contentElement,
+    height: (elem) => elem.scrollHeight,
+    duration,
+    easing: "easeInOutQuad",
   });
-});
+};
+const animatedClose = (contentElement, duration = 500) => {
+  anime({
+    targets: contentElement,
+    height: 0,
+    duration,
+    easing: "easeInOutQuad",
+  });
+};
+const initAcordion = (
+  rootSelector,
+  { duration, element = "js-accordion__item", button = "js-acordion__button", content = "js-accordion__content" }
+) => {
+  const root = document.querySelector(`.${rootSelector}`);
 
-// let animation = anime({
-//   targets: "p",
-//   translateY: 100,
-//   borderRadius: 50,
-//   duration: 2000,
-//   easing: "linear",
-//   direction: "alternate",
-// });
+  if (!root) {
+    throw new Error("Root element cannot be find");
+  }
+  const acordionItems = root.querySelectorAll(`.${element}`);
+  if (!acordionItems) {
+    throw new Error("itemSelector element cannot be find");
+  }
+  const handler = (event, index) => {
+    acordionItems.forEach((el, i) => {
+      const contentElement = el.querySelector(`.${content}`);
+      if (contentElement) {
+        if (index === i) {
+          el.classList.toggle("is-open");
+          if (el.classList.contains("is-open")) {
+            animatedOpen(contentElement, duration);
+          } else {
+            animatedClose(contentElement, duration);
+          }
+        } else if (el.classList.contains("is-open")) {
+          el.classList.remove("is-open");
+          animatedClose(contentElement, duration);
+        }
+      }
+    });
+  };
 
-// anime({
-//   targets: ".accordion-item",
-//   translateY: 100,
-//   duration: 100000,
-// });
-
-// let isOpen = false;
-// document.addEventListener(
-//   "DOMContentLoaded",
-//   () => {
-//     let targets = document.getElementById("wrapper");
-//     let wrapperStyle = wrapper.style;
-//     let button = document.getElementById("button");
-//     button.addEventListener(
-//       "click",
-//       () => {
-//         if (isOpen) {
-//           anime({
-//             targets,
-//             height: 0,
-//             opacity: [1, 0],
-//             duration: 1000,
-//             easing: "easeOutQuad",
-//             complete() {
-//               isOpen = false;
-//               wrapperStyle.display = "";
-//             },
-//           });
-//         } else {
-//           isOpen = true;
-//           wrapperStyle.display = "block";
-//           wrapperStyle.height = "0px";
-//           anime({
-//             targets,
-//             height: (el) => el.scrollHeight,
-//             opacity: [0, 1],
-//             duration: 1000,
-//             easing: "easeOutCubic",
-//           });
-//         }
-//       },
-//       false
-//     );
-//   },
-//   false
-// );
+  if (acordionItems) {
+    acordionItems.forEach((el, index) => {
+      const btn = el.querySelector(`.${button}`);
+      if (btn) {
+        btn.addEventListener("click", (e) => handler(e, index));
+      }
+    });
+  }
+};
+initAcordion("js-accordion", { duration: 500 });

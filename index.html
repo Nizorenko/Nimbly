@@ -8,51 +8,54 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/popup.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
-  <body class="valuePaddingLock">
-    <header class="section section_header">
-      <div class="container fix">
+  <body class="js-value__padding">
+    <header class="header__section">
+      <div class="container">
         <div class="header">
-          <a href="#"><img class="header-logo" src="./images/nimbly-logo.png" alt="Logo company" /></a>
-          <button class="svg-header">
-            <svg class="" width="30" height="30">
+          <a class="header__logo" href="#"><img src="./images/nimbly-logo.png" alt="Logo company" /></a>
+          <button class="header__iconMobil" type="button">
+            <svg width="30" height="30">
               <use href="./images/icons.svg#frame-icon"></use>
             </svg>
           </button>
-          <nav class="menu-nav">
-            <ul class="navigation">
-              <li><a class="navigation-link" href="#">Features</a></li>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li><a class="header__link" href="#">Features</a></li>
 
               <li>
-                <a class="navigation-link" href="#">How it works</a>
+                <a class="header__link" href="#">How it works</a>
               </li>
 
               <li>
-                <a class="navigation-link" href="#">Industries</a>
+                <a class="header__link" href="#">Industries</a>
               </li>
 
-              <li><a class="navigation-link" href="#">Insight</a></li>
+              <li><a class="header__link" href="#">Insight</a></li>
             </ul>
-            <a class="btn-green _btn-headerMobail" href="#request-form">Request Demo</a>
+            <a class="header__btn btn css-btn" href="#request-form">Request Demo</a>
           </nav>
 
-          <div class="sign_in-and-btn">
-            <button class="sign-in" type="button">
+          <div class="header__user">
+            <button class="hedaer__authorization" type="button">
               <svg width="24" height="24">
                 <use href="./images/icons.svg#frame-icon"></use>
               </svg>
               Sign In
             </button>
 
-            <a class="btn-green" href="#request-form">Request Demo</a>
+            <a class="hedaer__feedback btn css-btn" href="#request-form" type="button">Request Demo</a>
           </div>
 
-          <button type="button" class="menu__icon">
+          <button class="header__burgerMenu" type="button">
             burger menu
             <span></span>
           </button>
@@ -65,49 +68,63 @@
 
       <section class="section">
         <div class="container">
-          <div class="heading-main">
-            <div class="heading-grid">
-              <div>
-                <h1 class="h2">Make your operations Easier and Efficient with <span>Nimbly</span></h1>
-                <p class="heading-p">
+          <div class="companyOverview">
+            <div class="companyOverview__left">
+              <div class="companyOverview__about">
+                <h1 class="companyOverview__title">
+                  Make your operations Easier and Efficient with <span class="css-color">Nimbly</span>
+                </h1>
+                <p class="companyOverview__text">
                   Digitize your business operations and gain real-time analytics on your team progress anytime,
                   anywhere.
                 </p>
               </div>
-              <div class="heading-btn">
-                <a class="btn-green" href="#request-form">Request Demo</a>
-                <a class="link-phone" href="tel:+79228784286">
-                  <svg width="24" height="24">
+              <div class="companyOverview__btn">
+                <a class="companyOverview__btnForm btn css-btn" type="button" href="#request-form"> Request Demo </a>
+                <a class="companyOverview__btnCall" href="tel:+79228784286">
+                  <svg class="companyOverview__iconCall" width="24" height="24">
                     <use href="./images/icons.svg#phone-icon"></use>
                   </svg>
                   Free Consultation
                 </a>
               </div>
             </div>
-
-            <img class="heading-img" src="./images/hero.png" alt="Hero" width="564" height="580" />
+            <div class="companyOverview__right">
+              <img class="companyOverview__illustration" src="./images/hero.png" alt="Hero" width="564" height="580" />
+            </div>
           </div>
-          <div class="list-heading">
-            <h2 class="margin_indent">Trusted by 10,000+ the world’s fastest growing companies including:</h2>
-
-            <ul class="list-logo">
-              <li>
-                <a href="#"><img src="./images/kfs.png" alt="Logo Kfs" /></a>
+          <div class="companyWork">
+            <h2 class="companyWork__title">Trusted by 10,000+ the world’s fastest growing companies including:</h2>
+            <ul class="companyWork__List">
+              <li class="companyWork__item">
+                <a class="companyWork__link" href="#"
+                  ><img class="companyWork__illustration" src="./images/kfs.png" alt="Logo Kfs"
+                /></a>
               </li>
-              <li>
-                <a href="#"><img src="./images/cargill.png" alt="Logo Cargill" /></a>
+              <li class="companyWork__item">
+                <a class="companyWork__link" href="#"
+                  ><img class="companyWork__illustration" src="./images/cargill.png" alt="Logo Cargill"
+                /></a>
               </li>
-              <li>
-                <a href="#"><img src="./images/7elven.png" alt="Logo 7elven" /></a>
+              <li class="companieList__item">
+                <a class="companyWork__link" href="#"
+                  ><img class="companyWork__illustration" src="./images/7elven.png" alt="Logo 7elven"
+                /></a>
               </li>
-              <li>
-                <a href="#"><img src="./images/underarmour.png" alt="Logo Underarmour" /></a>
+              <li class="companieList__item">
+                <a class="companyWork__link" href="#"
+                  ><img class="companyWork__illustration" src="./images/underarmour.png" alt="Logo Underarmour"
+                /></a>
               </li>
-              <li>
-                <a href="#"><img src="./images/dq.png" alt="Logo Dq" /></a>
+              <li class="companieList__item">
+                <a class="companyWork__link" href="#"
+                  ><img class="companyWork__illustration" src="./images/dq.png" alt="Logo Dq"
+                /></a>
               </li>
-              <li>
-                <a href="#"><img src="./images/toto.png" alt="Logo Toto" /></a>
+              <li class="companieList__item">
+                <a class="companyWork__link" href="#"
+                  ><img class="companyWork__illustration" src="./images/toto.png" alt="Logo Toto"
+                /></a>
               </li>
             </ul>
           </div>
@@ -117,18 +134,18 @@
       <!-- Секция с видео -->
 
       <section class="section">
-        <div class="container-mini">
-          <div class="introductory-video">
-            <span class="span-green">WAYS NIMBLY HELPS YOU</span>
-            <h2 class="margin_indent">Helping you maximize operations management with digitization</h2>
+        <div class="container__mini">
+          <div class="companyPresentation">
+            <span class="heading">WAYS NIMBLY HELPS YOU</span>
+            <h2 class="companyPresentation__title">Helping you maximize operations management with digitization</h2>
 
-            <p class="margin_indent">
+            <p class="companyPresentation__text">
               Nimbly will digitize your business operations so you'll get real-time analytics on your team's progress
               anytime, anywhere even without an internet connection.
             </p>
 
             <video
-              class="video"
+              class="companyPresentation__video"
               width="675"
               height="380"
               controls="controls"
@@ -143,71 +160,72 @@
       <!-- Секция со списком элементов демонстрация приложения -->
 
       <section class="section">
-        <div class="container-mini">
-          <div class="demo-application">
-            <span class="span-green">OUR FEATURES</span>
-            <h2 class="margin_indent">Discover How Our Features Can Simplify Your Work Flow</h2>
+        <div class="container__mini">
+          <div class="appPreview">
+            <span class="heading">OUR FEATURES</span>
+            <h2 class="appPreview__title">Discover How Our Features Can Simplify Your Work Flow</h2>
 
             <!-- Навигация списка -->
-            <nav>
-              <ul class="list-app">
-                <li>
-                  <a class="list-app__nav" href="#Audits">
-                    <svg width="32" height="32">
+            <nav class="appPreview__nav">
+              <ul class="appPreview__navList">
+                <li class="appPreview__navItem">
+                  <a class="appPreview__navLink" href="#Audits">
+                    <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#real-time-icon"></use>
                     </svg>
-                    <span>Real-time Audits</span>
+                    <span class="appPreview__navName">Real-time Audits</span>
                   </a>
                 </li>
 
-                <li>
-                  <a class="list-app__nav" href="#Easy">
-                    <svg width="32" height="32">
+                <li class="appPreview__navItem">
+                  <a class="appPreview__navLink" href="#Easy">
+                    <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#audits-icon"></use>
                     </svg>
-                    <span>Easy Digital Audits</span>
+                    <span class="appPreview__navName">Easy Digital Audits</span>
                   </a>
                 </li>
 
-                <li>
-                  <a class="list-app__nav" href="#Issue">
-                    <svg width="32" height="32">
+                <li class="appPreview__navItem">
+                  <a class="appPreview__navLink" href="#Issue">
+                    <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#issue-icon"></use>
                     </svg>
-                    <span>Issue Tracker</span>
+                    <span class="appPreview__navName">Issue Tracker</span>
                   </a>
                 </li>
 
-                <li>
-                  <a class="list-app__nav" href="#Robust">
-                    <svg width="32" height="32">
+                <li class="appPreview__navItem">
+                  <a class="appPreview__navLink" href="#Robust">
+                    <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#validation-icon"></use>
                     </svg>
-                    <span>Robust Validation</span>
+                    <span class="appPreview__navName">Robust Validation</span>
                   </a>
                 </li>
 
-                <li>
-                  <a class="list-app__nav" href="#Report">
-                    <svg width="32" height="32">
+                <li class="appPreview__navItem">
+                  <a class="appPreview__navLink" href="#Report">
+                    <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#analytics-icon"></use>
                     </svg>
-                    <span>Report & Analytics</span>
+                    <span class="appPreview__navName">Report & Analytics</span>
                   </a>
                 </li>
               </ul>
             </nav>
+
             <!-- Карточка элемента списка -->
 
-            <ul>
-              <li>
-                <div id="Audits">
-                  <p class="margin_indent">
+            <ul class="appPreview__cardList">
+              <li class="appPreview__cardItem">
+                <div class="appPreview__cardBox" id="Audits">
+                  <p class="appPreview__cardText">
                     You can optimize inspections with visual promoting guides to ensure products and services are being
-                    delivered consistently across the company.<a class="link-green" href="#">Learn more.</a>
+                    delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
                   </p>
                   <img
-                    class="Audits-img"
+                    class="appPreview__cardIllustration"
                     src="./images/Function_1.png"
                     alt="Application demonstration"
                     width="837"
@@ -217,65 +235,66 @@
               </li>
 
               <!-- <li>
-                <div id="Easy">
-                  <p>
+                <div class="appPreview__cardBox" id="Easy">
+                  <p class="appPreview__cardText">
                     By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
                     according to your SLA. <a href="">Learn more.</a>
                   </p>
-                  <img src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
+                  <img class="appPreview__cardIllustration" src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
                 </div>
               </li>
 
               <li>
-                <div id="Issue">
-                  <p>
+                <div class="appPreview__cardBox" id="Issue">
+                  <p class="appPreview__cardText">
                     By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
                     according to your SLA. <a href="">Learn more.</a>
                   </p>
-                  <img src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
+                  <img class="appPreview__cardIllustration" src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
                 </div>
               </li>
 
               <li>
-                <div id="Robust">
-                  <p>
+                <div class="appPreview__cardBox" id="Robust">
+                  <p class="appPreview__cardText">
                     By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
                     according to your SLA. <a href="">Learn more.</a>
                   </p>
-                  <img src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
+                  <img class="appPreview__cardIllustration" src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
                 </div>
               </li>
 
               <li>
-                <div id="Report">
-                  <p>
+                <div class="appPreview__cardBox" id="Report">
+                  <p class="appPreview__cardText">
                     By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
                     according to your SLA. <a href="">Learn more.</a>
                   </p>
-                  <img src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
+                  <img class="appPreview__cardIllustration" src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
                 </div>
               </li> -->
             </ul>
+            <div class="appPreview__grade">
+              <ul class="appPreview__gradeList">
+                <p class="appPreview__gradeText">
+                  We support various organizations to fundementally change the way we operate for a better future.
+                </p>
+                <li class="appPreview__listItem">
+                  <span class="appPreview__gradeNumber">57,000</span>
+                  <span class="appPreview__gradeName">Hours your saved</span>
+                </li>
 
-            <ul class="statistics">
-              <p class="statistics-p margin_indent">
-                We support various organizations to fundementally change the way we operate for a better future.
-              </p>
-              <li class="statistics-list">
-                <span class="statistics-interest">57,000</span>
-                <span class="statistics-name">Hours your saved</span>
-              </li>
+                <li class="statistics-list appPreview__listItem">
+                  <span class="appPreview__gradeNumber">59%</span>
+                  <span class="appPreview__gradeName">Inspection cost saved</span>
+                </li>
 
-              <li class="statistics-list">
-                <span class="statistics-interest">59%</span>
-                <span class="statistics-name">Inspection cost saved</span>
-              </li>
-
-              <li class="statistics-list">
-                <span class="statistics-interest">86%</span>
-                <span class="statistics-name">Increase in productivity</span>
-              </li>
-            </ul>
+                <li class="statistics-list appPreview__listItem">
+                  <span class="appPreview__gradeNumber">86%</span>
+                  <span class="appPreview__gradeName">Increase in productivity</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -284,43 +303,43 @@
 
       <section class="section">
         <div class="container">
-          <div class="Steps-work_bloc-1">
-            <div class="Steps-work-1">
-              <span class="span-green">HOW IT WORKS</span>
-              <h2>Fast, easy steps <br />to start Operational Excellence</h2>
-              <p class="Steps-work-1_paragraph">
+          <div class="benefits">
+            <div class="benefits__left">
+              <span class="heading">HOW IT WORKS</span>
+              <h2 class="benefits__title">Fast, easy steps to start Operational Excellence</h2>
+              <p class="benefits__text">
                 Nimbly works to speed up your work, you won't spend a lot of time getting started.
               </p>
-              <ul>
-                <li>
-                  <div>
-                    <h3 class="h3">Know what to prioritize</h3>
-                    <p class="Steps-work-1_paragraph">
+              <ul class="benefits__list">
+                <li class="benefits__item">
+                  <div class="benefits__itemBox">
+                    <h3 class="benefits__itemTitle">Know what to prioritize</h3>
+                    <p class="benefits__itemText">
                       Reports show you which projects are most profitable and which ones drain your team’s time.
                     </p>
                   </div>
                 </li>
 
-                <li>
-                  <div>
-                    <h3>Make it clear with digitization</h3>
-                    <p class="Steps-work-1_paragraph">
+                <li class="benefits__item">
+                  <div class="benefits__itemBox">
+                    <h3 class="benefits__itemTitle">Make it clear with digitization</h3>
+                    <p class="benefits__itemText">
                       Go paperless to digitize your checklists and automate your reporting.
                     </p>
                   </div>
                 </li>
               </ul>
 
-              <a class="link-streak" href="#"
+              <a class="moreDetails" href="#"
                 >See how Nimbly works
-                <svg width="25" height="24">
+                <svg class="moreDetails__arrow" width="25" height="24">
                   <use href="./images/icons.svg#arrow"></use>
                 </svg>
               </a>
             </div>
 
             <img
-              class="Steps-work_bloc-1-img"
+              class="benefits__illustration"
               src="./images/Photo_gerl.png"
               alt="Photo Gerl"
               width="612"
@@ -332,89 +351,89 @@
 
       <section class="section">
         <div class="container">
-          <div class="Steps-work_bloc-2">
+          <div class="companyProposal">
             <img
-              class="Steps-work_bloc-2-img"
+              class="companyProposal__illustration"
               src="./images/industries.png"
               alt="Photo Industries"
               width="603"
               height="775"
             />
-            <div class="Steps-work-2">
-              <span class="span-green"> INDUSTRIES </span>
-              <h2>Desk work or field work, we’ve covered</h2>
+            <div class="companyProposal__right">
+              <span class="heading"> INDUSTRIES </span>
+              <h2 class="companyProposal__title">Desk work or field work, we’ve covered</h2>
 
-              <ul class="Steps-work-2_ul accordion">
-                <li class="Steps-work-2_list accordion-item">
-                  <button class="Steps-work-2_button" id="button" href="#">
-                    <svg width="33" height="32">
+              <ul class="companyProposal__list js-accordion">
+                <li class="companyProposal__item js-accordion__item">
+                  <button class="companyProposal__button js-acordion__button" href="#">
+                    <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#food-icon"></use>
                     </svg>
                     Food & Beverage
-                    <svg width="12" height="20">
+                    <svg class="companyProposal__arrow" width="12" height="20">
                       <use href="./images/icons.svg#arrow-list"></use>
                     </svg>
                   </button>
 
-                  <div id="wrapper" class="accordion-content">
-                    <p class="accordion-p">
+                  <div class="companyProposal__content js-accordion__content" id="button">
+                    <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
                     </p>
                   </div>
                 </li>
 
-                <li class="Steps-work-2_list accordion-item">
-                  <button class="Steps-work-2_button" href="#">
-                    <svg width="33" height="32">
+                <li class="companyProposal__item js-accordion__item">
+                  <button class="companyProposal__button js-acordion__button" href="#">
+                    <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#shop-icon"></use>
                     </svg>
                     Retail
-                    <svg width="12" height="20">
+                    <svg class="companyProposal__arrow" width="12" height="20">
                       <use href="./images/icons.svg#arrow-list"></use>
                     </svg>
                   </button>
 
-                  <div class="accordion-content">
-                    <p class="accordion-p">
+                  <div class="companyProposal__content js-accordion__content">
+                    <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
                     </p>
                   </div>
                 </li>
 
-                <li class="Steps-work-2_list accordion-item">
-                  <button class="Steps-work-2_button" href="#">
-                    <svg width="33" height="32">
+                <li class="companyProposal__item js-accordion__item">
+                  <button class="companyProposal__button js-acordion__button" href="#">
+                    <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#builder-icon"></use>
                     </svg>
                     Manufacturing
-                    <svg width="12" height="20">
+                    <svg class="companyProposal__arrow" width="12" height="20">
                       <use href="./images/icons.svg#arrow-list"></use>
                     </svg>
                   </button>
 
-                  <div class="accordion-content">
-                    <p class="accordion-p">
+                  <div class="companyProposal__content js-accordion__content">
+                    <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
                     </p>
                   </div>
                 </li>
 
-                <li class="Steps-work-2_list accordion-item">
-                  <button class="Steps-work-2_button" href="#">
-                    <svg width="33" height="32">
+                <li class="companyProposal__item js-accordion__item">
+                  <button class="companyProposal__button js-acordion__button" href="#">
+                    <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#flower-icon"></use>
                     </svg>
                     Agriculture
-                    <svg width="12" height="20">
+                    <svg class="companyProposal__arrow" width="12" height="20">
                       <use href="./images/icons.svg#arrow-list"></use>
                     </svg>
                   </button>
 
-                  <div class="accordion-content">
-                    <p class="accordion-p">
+                  <div class="companyProposal__content js-accordion__content">
+                    <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
                     </p>
@@ -422,9 +441,9 @@
                 </li>
               </ul>
 
-              <a class="link-streak" href="#"
+              <a class="moreDetails" href="#"
                 >Select your Industry
-                <svg width="25" height="24">
+                <svg class="moreDetails__arrow" width="25" height="24">
                   <use href="./images/icons.svg#arrow"></use>
                 </svg>
               </a>
@@ -437,57 +456,58 @@
 
       <section class="section">
         <div class="container">
-          <div class="Comment__block-header">
-            <span class="span-green">CUSTOMER SAY</span>
-            <h2 class="margin_indent">See how businesses like yours found answers with Nimbly</h2>
-            <p class="margin_indent">
+          <div class="commentHeader">
+            <span class="heading">CUSTOMER SAY</span>
+            <h2 class="commentHeader__title">See how businesses like yours found answers with Nimbly</h2>
+            <p class="commentHeader__text">
               From start-ups to enterprises, we’ve helped transform operations for clients from various industrial
               backgrounds.
             </p>
           </div>
-          <article class="comment-card">
+          <article class="commentCard">
             <!-- Первый слайдер -->
-            <div class="swiper-photo">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slide">
+
+            <div class="commentCard__photo js-swiper__photo">
+              <ul class="commentCard__photoList swiper-wrapper">
+                <li class="commentCard__photoItem swiper-slide">
                   <img
-                    class="comment-photo"
+                    class="commentCard__photoUser"
                     src="./images/User_1.png"
                     alt="Tondi Sihombing photo"
                     width="440"
                     height="509"
                   />
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide commentCard__photoItem">
                   <img
-                    class="comment-photo"
+                    class="commentCard__photoUser"
                     src="./images/industries.png"
                     alt="Tondi Sihombing photo"
                     width="440"
                     height="509"
                   />
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide commentCard__photoItem">
                   <img
-                    class="comment-photo"
+                    class="commentCard__photoUser"
                     src="./images/User_1.png"
                     alt="Tondi Sihombing photo"
                     width="440"
                     height="509"
                   />
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide commentCard__photoItem">
                   <img
-                    class="comment-photo"
+                    class="commentCard__photoUser"
                     src="./images/User_1.png"
                     alt="Tondi Sihombing photo"
                     width="440"
                     height="509"
                   />
                 </li>
-                <li class="swiper-slide">
+                <li class="swiper-slide commentCard__photoItem">
                   <img
-                    class="comment-photo"
+                    class="commentCard__photoUser"
                     src="./images/User_1.png"
                     alt="Tondi Sihombing photo"
                     width="440"
@@ -496,94 +516,126 @@
                 </li>
               </ul>
             </div>
+
             <!-- Второй слайдер -->
-            <div class="swiper-text">
-              <ul class="swiper-wrapper">
-                <li class="swiper-slide">
-                  <div>
-                    <p class="comment-p">
+
+            <div class="commentCard__text js-swiper__text">
+              <ul class="commentCard__textList swiper-wrapper">
+                <li class="commentCard__textItem swiper-slide">
+                  <div class="commentCard__textBox">
+                    <p class="commentCard__textUser">
                       knowledge sharing, smoothens the information flow, and provides seamless access to data more.
                       receive real-time notifications from outlets and follow them up instantly. Nimbly not only reduces
                       paper use, but also simplifies knowledge sharing, smoothens the information flow, and provides
                       seamless access to data more.
                     </p>
 
-                    <div class="user-card">
-                      <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
-                      <span class="user-card__Name">Tondi Sihombing</span>
-                      <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                    <div class="userCard">
+                      <img
+                        class="userCard__photo"
+                        src="./images/Logo_1.png"
+                        alt="Company `s logo"
+                        width="78"
+                        height="78"
+                      />
+                      <span class="userCard__name">Tondi Sihombing</span>
+                      <span class="userCard__position">Operations Manager, Kopi Kenangan</span>
                     </div>
                   </div>
                 </li>
-                <li class="swiper-slide">
-                  <div>
-                    <p class="comment-p">
+                <li class="commentCard__textItem swiper-slide">
+                  <div class="commentCard__textBox">
+                    <p class="commentCard__textUser">
                       simplifies knowledge sharing, smoothens the information flow, and provides seamless access to data
                       more. notifications from outlets and follow them up instantly. Nimbly not only reduces paper use,
                       but also simplifies knowledge sharing, smoothens the information flow, and provides seamless
                       access to data more.
                     </p>
 
-                    <div class="user-card">
-                      <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
-                      <span class="user-card__Name">Tondi Sihombing</span>
-                      <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                    <div class="userCard">
+                      <img
+                        class="userCard__photo"
+                        src="./images/Logo_1.png"
+                        alt="Company `s logo"
+                        width="78"
+                        height="78"
+                      />
+                      <span class="userCard__name">Tondi Sihombing</span>
+                      <span class="userCard__position">Operations Manager, Kopi Kenangan</span>
                     </div>
                   </div>
                 </li>
-                <li class="swiper-slide">
-                  <div>
-                    <p class="comment-p">
+                <li class="commentCard__textItem swiper-slide">
+                  <div class="commentCard__textBox">
+                    <p class="commentCard__textUser">
                       Nimbly speeds up our issuee, but also simplifies knowledge sharing, smoothens the information
                       flow, and provides seamless access to data more. but also simplifies knowledge sharing, smoothens
                       the information flow, and provides seamless access to data more.seamless access to data more.
                     </p>
 
-                    <div class="user-card">
-                      <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
-                      <span class="user-card__Name">Tondi Sihombing</span>
-                      <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                    <div class="userCard">
+                      <img
+                        class="userCard__photo"
+                        src="./images/Logo_1.png"
+                        alt="Company `s logo"
+                        width="78"
+                        height="78"
+                      />
+                      <span class="userCard__name">Tondi Sihombing</span>
+                      <span class="userCard__position">Operations Manager, Kopi Kenangan</span>
                     </div>
                   </div>
                 </li>
-                <li class="swiper-slide">
-                  <div>
-                    <p class="comment-p">
+                <li class="commentCard__textItem swiper-slide">
+                  <div class="commentCard__textBox">
+                    <p class="commentCard__textUser">
                       Nimbly speeds up our issue resolution in Kopi Kenangan. With Nimbly's issue tracker, the
                       headquarters can receive real-time notifications from outlets and follow them up instantly. Nimbly
                       not only reduces paper use, but also simplifies knowledge sharing, smoothens the information flow,
                       and provides seamless access to data more.
                     </p>
 
-                    <div class="user-card">
-                      <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
-                      <span class="user-card__Name">Tondi Sihombing</span>
-                      <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                    <div class="userCard">
+                      <img
+                        class="userCard__photo"
+                        src="./images/Logo_1.png"
+                        alt="Company `s logo"
+                        width="78"
+                        height="78"
+                      />
+                      <span class="userCard__name">Tondi Sihombing</span>
+                      <span class="userCard__position">Operations Manager, Kopi Kenangan</span>
                     </div>
                   </div>
                 </li>
-                <li class="swiper-slide">
-                  <div>
-                    <p class="comment-p">
+                <li class="commentCard__textItem swiper-slide">
+                  <div class="commentCard__textBox">
+                    <p class="commentCard__textUser">
                       Nimbly speeds up our issue resolution in Kopi Kenangan. With Nimbly's issue tracker, the
                       headquarters can receive real-time notifications from outlets and follow them up instantly. Nimbly
                       not haring, smoothens the information flow, and provides seamless access to data more.
                     </p>
 
-                    <div class="user-card">
-                      <img src="./images/Logo_1.png" alt="Company `s logo" width="78" height="78" />
-                      <span class="user-card__Name">Tondi Sihombing</span>
-                      <span class="user-card__position">Operations Manager, Kopi Kenangan</span>
+                    <div class="userCard">
+                      <img
+                        class="userCard__photo"
+                        src="./images/Logo_1.png"
+                        alt="Company `s logo"
+                        width="78"
+                        height="78"
+                      />
+                      <span class="userCard__name">Tondi Sihombing</span>
+                      <span class="userCard__position">Operations Manager, Kopi Kenangan</span>
                     </div>
                   </div>
                 </li>
               </ul>
-              <div class="nav-arrow-pagination">
-                <svg class="comments-arrow-prev" width="16" height="14">
+              <div class="commentCard__pagination">
+                <svg class="commentCard__iconPrev comments-arrow-prev" width="16" height="14">
                   <use href="./images/icons.svg#arrow-comments"></use>
                 </svg>
                 <div class="pagination"></div>
-                <svg class="comments-arrow-next" width="16" height="14">
+                <svg class="commentCard__iconNext comments-arrow-next" width="16" height="14">
                   <use href="./images/icons.svg#arrow-comments"></use>
                 </svg>
               </div>
@@ -595,25 +647,31 @@
       <!-- Форма для заполнения *Request Demo* -->
 
       <section class="section">
-        <div class="container-mini">
-          <div class="form__header-center">
-            <h2 class="margin_indent" id="request-form">
+        <div class="container__mini">
+          <div class="feedback">
+            <h2 class="feedback__title" id="request-form">
               Empower your team today. Get started with intelligent workflows
             </h2>
-            <p class="margin_indent">Nimbly brings you new opportunities through seamless digitization</p>
+            <p class="feedback__text">Nimbly brings you new opportunities through seamless digitization</p>
           </div>
 
-          <form class="form-grid" action="#" method="#">
-            <ul class="form-grid-ul">
-              <li>
-                <label class="form-grid__label" for="user_name">Full Name :</label>
-                <input class="input" type="text" placeholder="Enter your full name" name="user_name" id="user_name" />
+          <form class="feedbackForm" action="#" method="#">
+            <ul class="feedbackForm__list">
+              <li class="feedbackForm__item">
+                <label class="feedbackForm__label" for="user_name">Full Name :</label>
+                <input
+                  class="feedbackForm__input"
+                  type="text"
+                  placeholder="Enter your full name"
+                  name="user_name"
+                  id="user_name"
+                />
               </li>
 
-              <li>
-                <label class="form-grid__label" for="user_mail">Email Address :</label>
+              <li class="feedbackForm__item">
+                <label class="feedbackForm__label" for="user_mail">Email Address :</label>
                 <input
-                  class="input"
+                  class="feedbackForm__input"
                   type="mail"
                   placeholder="Enter your email address"
                   name="user_mail"
@@ -621,15 +679,21 @@
                 />
               </li>
 
-              <li>
-                <label class="form-grid__label" for="user_phone">Mobile :</label>
-                <input class="input" type="tel" placeholder="Enter your mobile" name="user_phone" id="user_phone" />
+              <li class="feedbackForm__item">
+                <label class="feedbackForm__label" for="user_phone">Mobile :</label>
+                <input
+                  class="feedbackForm__input"
+                  type="tel"
+                  placeholder="Enter your mobile"
+                  name="user_phone"
+                  id="user_phone"
+                />
               </li>
 
-              <li>
-                <label class="form-grid__label" for="user_company">Company Name :</label>
+              <li class="feedbackForm__item">
+                <label class="feedbackForm__label" for="user_company">Company Name :</label>
                 <input
-                  class="input"
+                  class="feedbackForm__input"
                   type="text"
                   placeholder="Enter your company name"
                   name="user_company"
@@ -637,15 +701,21 @@
                 />
               </li>
 
-              <li>
-                <label class="form-grid__label" for="user_tittle">Tittle :</label>
-                <input class="input" type="text" placeholder="Enter your tittle" name="user_tittle" id="user_tittle" />
+              <li class="feedbackForm__item">
+                <label class="feedbackForm__label" for="user_tittle">Tittle :</label>
+                <input
+                  class="feedbackForm__input"
+                  type="text"
+                  placeholder="Enter your tittle"
+                  name="user_tittle"
+                  id="user_tittle"
+                />
               </li>
 
-              <li>
-                <label class="form-grid__label" for="user_tittle">Industry :</label>
+              <li class="feedbackForm__item">
+                <label class="feedbackForm__label" for="user_tittle">Industry :</label>
 
-                <select class="input">
+                <select class="feedbackForm__input">
                   <option value="">Select Industry</option>
                   <option value="">1</option>
                   <option value="">2</option>
@@ -654,7 +724,7 @@
                   <option value="">5</option>
                 </select>
               </li>
-              <button type="submit" class="btn-green">Request Demo</button>
+              <button type="submit" class="feedbackForm__button btn css-btn">Request Demo</button>
 
               <!-- Можно так ваще?) -->
             </ul>
@@ -665,68 +735,72 @@
 
     <!-- Footer -->
 
+    <!-- закончил тут -->
+
     <footer>
-      <div class="section-footer">
+      <div class="footer__section">
         <div class="container">
           <div class="footer">
-            <div class="footer-qr-code">
-              <a href="#"><img src="./images/nimbly-logo-footer.png" alt="nimbly-logo-footer" /> </a>
-              <p class="section-paragraph">
+            <div class="footer__about">
+              <a class="footer__logoLink" href="#"
+                ><img class="footer__logo" src="./images/nimbly-logo-footer.png" alt="nimbly-logo-footer" />
+              </a>
+              <p class="footer__aboutText">
                 Digitize your business operations and gain real-time analytics on your team progress anytime, anywhere.
               </p>
 
-              <img src="./images/QR-Code.png" alt="QR-Code" />
+              <img class="footer__qr" src="./images/QR-Code.png" alt="QR-Code" />
             </div>
-            <div class="footer_nav">
-              <section>
-                <h3 class="section-heading">Nimbly</h3>
+            <div class="footer__box">
+              <section class="footer__boxNav">
+                <h3 class="footer__title">Nimbly</h3>
 
-                <ul>
-                  <li class="footer-link"><a href="#">About Us</a></li>
-                  <li class="footer-link"><a href="#">Features</a></li>
-                  <li class="footer-link"><a href="#">Industries</a></li>
-                  <li class="footer-link"><a href="#">How it Works</a></li>
-                  <li class="footer-link"><a href="#">Insight</a></li>
+                <ul class="footer__list">
+                  <li class="footer__item"><a class="footer__link" href="#">About Us</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Features</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Industries</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">How it Works</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Insight</a></li>
                 </ul>
               </section>
 
-              <section>
-                <h3 class="section-heading">More</h3>
+              <section class="footer__boxNav">
+                <h3 class="footer__title">More</h3>
 
-                <ul>
-                  <li class="footer-link"><a href="#">Blogs</a></li>
-                  <li class="footer-link"><a href="#">Contact Us</a></li>
-                  <li class="footer-link"><a href="#">FAQ</a></li>
-                  <li class="footer-link"><a href="#">Privacy Policy</a></li>
-                  <li class="footer-link"><a href="#">Terms & Condition</a></li>
+                <ul class="footer__list">
+                  <li class="footer__item"><a class="footer__link" href="#">Blogs</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+                  <li class="footer__item"><a class="footer__link" href="#">Terms & Condition</a></li>
                 </ul>
               </section>
 
-              <div>
-                <ul class="news-grid">
-                  <li>
-                    <h3 class="section-heading">Indonesian Office</h3>
-                    <p class="section-paragraph">
+              <div class="footer__info">
+                <ul class="footer__infoList">
+                  <li class="footer__infoItem">
+                    <h3 class="footer__infoTitle">Indonesian Office</h3>
+                    <p class="footer__infoText">
                       WeWork, Noble House Jl. Dr. Ide Anak Agung Gde Agung DKI Jakarta 12950
                     </p>
                   </li>
 
-                  <li>
-                    <h3 class="section-heading">US Office</h3>
-                    <p class="section-paragraph">2001 Ross Avenue Suite #700-119 Dallas, TX 75291</p>
+                  <li class="footer__infoItem">
+                    <h3 class="footer__infoTitle">US Office</h3>
+                    <p class="footer__infoText">2001 Ross Avenue Suite #700-119 Dallas, TX 75291</p>
                   </li>
                 </ul>
               </div>
-              <div>
-                <ul class="news-grid">
-                  <li>
-                    <h3 class="section-heading">Singapore Office</h3>
-                    <p class="section-paragraph">100 Peck Seah Street PS100 #08-14 Singapore 079333</p>
+              <div class="footer__info">
+                <ul class="footer__infoList">
+                  <li class="footer__infoItem">
+                    <h3 class="footer__infoTitle">Singapore Office</h3>
+                    <p class="footer__infoText">100 Peck Seah Street PS100 #08-14 Singapore 079333</p>
                   </li>
 
-                  <li>
-                    <h3 class="section-heading">Colombia Office</h3>
-                    <p class="section-paragraph">Calle 52 B # 74 A 32 Bogotá - Colombia</p>
+                  <li class="footer__infoItem">
+                    <h3 class="footer__infoTitle">Colombia Office</h3>
+                    <p class="footer__infoText">Calle 52 B # 74 A 32 Bogotá - Colombia</p>
                   </li>
                 </ul>
               </div>
@@ -734,11 +808,11 @@
           </div>
         </div>
       </div>
-      <div class="section-copyright">
+      <div class="copyright__section">
         <div class="container">
-          <div class="Copyright">
-            <p class="section-paragraph">Copyright © 2021 Nimbly App. All rights reserved.</p>
-            <p class="section-paragraph order">
+          <div class="copyright">
+            <p class="copyright__text">Copyright © 2021 Nimbly App. All rights reserved.</p>
+            <p class="copyright__text order">
               We are ISO 27001 certified, assuring information security is managed with the highest standards.
             </p>
           </div>
@@ -758,13 +832,7 @@
                 <use href="./images/icons.svg#user-popup-icon"></use>
               </svg>
             </label>
-            <input
-              class="popup__form-input --size-input"
-              type="text"
-              placeholder="Your name"
-              name="name_user"
-              id="name_user"
-            />
+            <input class="popup__form-input" type="text" placeholder="Your name" name="name_user" id="name_user" />
 
             <label for="fone_user">
               <svg width="15" height="15">
@@ -772,13 +840,7 @@
               </svg>
             </label>
 
-            <input
-              class="popup__form-input --size-input"
-              type="tel"
-              placeholder="Your phone"
-              name="phone_user"
-              id="phone_user"
-            />
+            <input class="popup__form-input" type="tel" placeholder="Your phone" name="phone_user" id="phone_user" />
 
             <label for="mail_user">
               <svg width="15.195" height="10.52">
@@ -786,14 +848,14 @@
               </svg>
             </label>
             <input
-              class="popup__form-input --size-input"
+              class="popup__form-input"
               type="mail"
               placeholder="Enter your email address"
               name="mail_user"
               id="mail_user"
             />
           </form>
-          <button class="btn-green margin-btn">Call me back</button>
+          <button class="btn css-btn margin-btn">Call me back</button>
           <address class="popup__address">
             <span>Our address</span>
             <span class="color">New York, Street, ZIP code</span>
