@@ -45,7 +45,7 @@
           </nav>
 
           <div class="header__user">
-            <button class="hedaer__authorization" type="button">
+            <button class="hedaer__entrance" type="button">
               <svg width="24" height="24">
                 <use href="./images/icons.svg#frame-icon"></use>
               </svg>
@@ -160,7 +160,7 @@
       <!-- Секция со списком элементов демонстрация приложения -->
 
       <section class="section">
-        <div class="container__mini">
+        <div class="container__appPreview">
           <div class="appPreview">
             <span class="heading">OUR FEATURES</span>
             <h2 class="appPreview__title">Discover How Our Features Can Simplify Your Work Flow</h2>
@@ -216,71 +216,96 @@
             </nav>
 
             <!-- Карточка элемента списка -->
+            <div class="js-appPreview__swiper appPreview__card">
+              <ul class="appPreview__cardList swiper-wrapper">
+                <li class="appPreview__cardItem swiper-slide">
+                  <div class="appPreview__cardBox" id="Audits">
+                    <p class="appPreview__cardText">
+                      You can optimize inspections with visual promoting guides to ensure products and services are
+                      being delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
+                    </p>
+                    <img
+                      class="appPreview__cardIllustration"
+                      src="./images/Function_1.png"
+                      alt="Application demonstration"
+                      width="837"
+                      height="683"
+                    />
+                  </div>
+                </li>
 
-            <ul class="appPreview__cardList">
-              <li class="appPreview__cardItem">
-                <div class="appPreview__cardBox" id="Audits">
-                  <p class="appPreview__cardText">
-                    You can optimize inspections with visual promoting guides to ensure products and services are being
-                    delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
-                  </p>
-                  <img
-                    class="appPreview__cardIllustration"
-                    src="./images/Function_1.png"
-                    alt="Application demonstration"
-                    width="837"
-                    height="683"
-                  />
-                </div>
-              </li>
+                <li class="appPreview__cardItem swiper-slide">
+                  <div class="appPreview__cardBox" id="Easy">
+                    <p class="appPreview__cardText">
+                      By using our issue tracker and resolution monitoring technologies, all your problems will be
+                      resolved according to your SLA. <a href="">Learn more.</a>
+                    </p>
+                    <img
+                      class="appPreview__cardIllustration"
+                      src="/images/Function_2.png"
+                      alt="Application demonstration"
+                      width="620"
+                      height="500"
+                    />
+                  </div>
+                </li>
 
-              <!-- <li>
-                <div class="appPreview__cardBox" id="Easy">
-                  <p class="appPreview__cardText">
-                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
-                    according to your SLA. <a href="">Learn more.</a>
-                  </p>
-                  <img class="appPreview__cardIllustration" src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
-                </div>
-              </li>
+                <li class="appPreview__cardItem swiper-slide">
+                  <div class="appPreview__cardBox" id="Issue">
+                    <p class="appPreview__cardText">
+                      By using our issue tracker and resolution monitoring technologies, all your problems will be
+                      resolved according to your SLA. <a href="">Learn more.</a>
+                    </p>
+                    <img
+                      class="appPreview__cardIllustration"
+                      src="/images/Function_1.png"
+                      alt="Application demonstration"
+                      width="620"
+                      height="500"
+                    />
+                  </div>
+                </li>
 
-              <li>
-                <div class="appPreview__cardBox" id="Issue">
-                  <p class="appPreview__cardText">
-                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
-                    according to your SLA. <a href="">Learn more.</a>
-                  </p>
-                  <img class="appPreview__cardIllustration" src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
-                </div>
-              </li>
+                <li class="appPreview__cardItem swiper-slide">
+                  <div class="appPreview__cardBox" id="Robust">
+                    <p class="appPreview__cardText">
+                      By using our issue tracker and resolution monitoring technologies, all your problems will be
+                      resolved according to your SLA. <a href="">Learn more.</a>
+                    </p>
+                    <img
+                      class="appPreview__cardIllustration"
+                      src="/images/Function_2.png"
+                      alt="Application demonstration"
+                      width="620"
+                      height="500"
+                    />
+                  </div>
+                </li>
 
-              <li>
-                <div class="appPreview__cardBox" id="Robust">
-                  <p class="appPreview__cardText">
-                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
-                    according to your SLA. <a href="">Learn more.</a>
-                  </p>
-                  <img class="appPreview__cardIllustration" src="/images/Function_2.png" alt="Application demonstration" width="620" height="500" />
-                </div>
-              </li>
-
-              <li>
-                <div class="appPreview__cardBox" id="Report">
-                  <p class="appPreview__cardText">
-                    By using our issue tracker and resolution monitoring technologies, all your problems will be resolved
-                    according to your SLA. <a href="">Learn more.</a>
-                  </p>
-                  <img class="appPreview__cardIllustration" src="/images/Function_1.png" alt="Application demonstration" width="620" height="500" />
-                </div>
-              </li> -->
-            </ul>
+                <li class="appPreview__cardItem swiper-slide">
+                  <div class="appPreview__cardBox" id="Report">
+                    <p class="appPreview__cardText">
+                      By using our issue tracker and resolution monitoring technologies, all your problems will be
+                      resolved according to your SLA. <a href="">Learn more.</a>
+                    </p>
+                    <img
+                      class="appPreview__cardIllustration"
+                      src="/images/Function_1.png"
+                      alt="Application demonstration"
+                      width="620"
+                      height="500"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="appPreview__grade">
               <ul class="appPreview__gradeList">
                 <p class="appPreview__gradeText">
                   We support various organizations to fundementally change the way we operate for a better future.
                 </p>
                 <li class="appPreview__listItem">
-                  <span class="appPreview__gradeNumber">57,000</span>
+                  <span class="appPreview__gradeNumber">57 h</span>
                   <span class="appPreview__gradeName">Hours your saved</span>
                 </li>
 
@@ -820,50 +845,50 @@
       </div>
     </footer>
 
-    <div class="popup">
-      <div class="popup__body">
-        <div class="popup__content">
-          <h3 class="popup__header">Need to deliver your cargo? We can help!</h3>
-          <p class="popup__paragraph">Fill a little form and we will call you back!</p>
+    <div class="popupEntrance">
+      <div class="popupEntrance__body">
+        <div class="popupEntrance__content">
+          <h3 class="popupEntrance__title">Need to deliver your cargo? We can help!</h3>
+          <p class="popupEntrance__text">Fill a little form and we will call you back!</p>
 
-          <form class="popup__form" action="#" method="#">
-            <label for="You_name">
-              <svg width="15" height="15">
+          <form class="popupEntrance__form" action="#" method="#">
+            <label class="popupEntrance__label" for="You_name">
+              <svg class="popupEntrance__iconUser" width="15" height="15">
                 <use href="./images/icons.svg#user-popup-icon"></use>
               </svg>
             </label>
-            <input class="popup__form-input" type="text" placeholder="Your name" name="name_user" id="name_user" />
+            <input class="popupEntrance__input" type="text" placeholder="Your name" name="name_user" id="name_user" />
 
-            <label for="fone_user">
-              <svg width="15" height="15">
+            <label class="popupEntrance__label" for="fone_user">
+              <svg class="popupEntrance__iconPhone" width="15" height="15">
                 <use href="./images/icons.svg#phone-popup-icon"></use>
               </svg>
             </label>
 
-            <input class="popup__form-input" type="tel" placeholder="Your phone" name="phone_user" id="phone_user" />
+            <input class="popupEntrance__input" type="tel" placeholder="Your phone" name="phone_user" id="phone_user" />
 
-            <label for="mail_user">
-              <svg width="15.195" height="10.52">
+            <label class="popupEntrance__label" for="mail_user">
+              <svg class="popupEntrance__iconMail" width="15.195" height="10.52">
                 <use href="./images/icons.svg#mail-icon"></use>
               </svg>
             </label>
             <input
-              class="popup__form-input"
+              class="popupEntrance__input"
               type="mail"
               placeholder="Enter your email address"
               name="mail_user"
               id="mail_user"
             />
           </form>
-          <button class="btn css-btn margin-btn">Call me back</button>
-          <address class="popup__address">
-            <span>Our address</span>
-            <span class="color">New York, Street, ZIP code</span>
+          <button class="popupEntrance__button btn css-btn">Call me back</button>
+          <address class="popupEntrance__contacts">
+            <span class="popupEntrance__titleAddress">Our address</span>
+            <a class="popupEntrance__linkAddress" href="#">New York, Street, ZIP code</a>
 
-            <span>Phone</span>
-            <a href="tel:+7 (8142) 33 22 11"> 8 (8142) 33 22 11</a>
-            <span>Email</span>
-            <a href="mailto:nizorenkolist@gmail.com"> nizorenkolist@gmail.com </a>
+            <span class="popupEntrance__titlePhone">Phone</span>
+            <a class="popupEntrance__linkPhone" href="tel:+7 (8142) 33 22 11"> 8 (8142) 33 22 11</a>
+            <span class="popupEntrance__titleEmail">Email</span>
+            <a class="popupEntrance__linkEmail" href="mailto:nizorenkolist@gmail.com"> nizorenkolist@gmail.com </a>
           </address>
         </div>
         <!-- /.modal__content -->
@@ -873,6 +898,10 @@
     <!-- /.modal -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/anime.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/popupEntrance.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/swiperAppPreview.js"></script>
+    <script src="./js/accordionComments.js"></script>
+    <script src="./js/swiperComments.js"></script>
   </body>
 </html>

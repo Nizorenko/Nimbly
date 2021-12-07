@@ -1,6 +1,6 @@
 /* Модальное окно*/
 
-.popup {
+.popupEntrance {
   display: block;
   width: 100%;
   height: 100%;
@@ -20,25 +20,25 @@
   transition: all 0.5s ease 0s;
 }
 
-.popup.open {
+.popupEntrance.open {
   z-index: 10;
   opacity: 1;
   visibility: visible;
 }
 
-.popup.open .popup__content {
+.popupEntrance.open .popupEntrance__content {
   visibility: visible;
   opacity: 1;
   transform: translate(0, 0);
 }
-.popup__body {
+.popupEntrance__body {
   display: grid;
   justify-content: center;
   align-items: center;
   min-height: 100%;
 }
 
-.popup__content {
+.popupEntrance__content {
   display: grid;
   grid-template-columns: auto;
   width: 100%;
@@ -56,7 +56,7 @@
   visibility: 0;
 }
 
-.popup__form {
+.popupEntrance__form {
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
@@ -67,7 +67,7 @@
   margin-bottom: 15px;
 }
 
-.popup__form-input {
+.popupEntrance__input {
   width: 100%;
   max-width: 527px;
   height: 64px;
@@ -78,36 +78,51 @@
   border: none;
 }
 
-.margin-btn {
+.popupEntrance__input:hover {
+  box-shadow: inset 0 0 0 1px #13ab4e;
+}
+
+.popupEntrance__input:focus {
+  outline: 0;
+  box-shadow: inset 0 0 0 1px #13ab4e;
+}
+
+.popupEntrance__button {
   margin-bottom: 15px;
 }
 
-.popup__header {
+.popupEntrance__title {
   margin: auto 10px;
   font-size: 20px;
 }
 
-.popup__paragraph {
+.popupEntrance__text {
   font-size: 12px;
   margin: 0;
 }
 
-.popup__address {
+.popupEntrance__contacts {
   display: grid;
   grid-template-rows: auto;
   gap: 9px;
   font-style: normal;
 }
-.popup__address span {
+.popupEntrance__titleAddress,
+.popupEntrance__titlePhone,
+.popupEntrance__titleEmail {
   font-size: 14px;
 }
 
-.popup__address a {
+.popupEntrance__linkAddress,
+.popupEntrance__linkPhone,
+.popupEntrance__linkEmail {
   font-size: 16px;
   text-decoration: none;
   color: #13ab4e;
 }
 
-.popup__address .color {
-  color: #13ab4e;
+.popupEntrance__linkAddress:hover,
+.popupEntrance__linkPhone:hover,
+.popupEntrance__linkEmail:hover {
+  text-decoration: underline;
 }
