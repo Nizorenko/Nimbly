@@ -30,6 +30,7 @@ let tab = function () {
     // Добовляем в переменную tabName номер атрибута по которому кликнули
 
     tabName = this.getAttribute("data__number");
+    console.log(tabName);
     selectTabContent(tabName);
   }
 
@@ -48,3 +49,8 @@ let tab = function () {
 };
 
 tab();
+
+// anime({
+//   targets: ".appPreview__cardItem",
+//   translateX: 0,
+// });

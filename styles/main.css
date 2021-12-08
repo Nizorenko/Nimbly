@@ -247,13 +247,25 @@
 }
 
 /* Карточка элемента списка */
+.appPreview__cardList {
+  position: relative;
+  min-height: 750px;
+}
 
 .appPreview__cardItem {
-  display: none;
+  position: absolute;
+
+  opacity: 0;
+  transition: transform 0.7s linear;
+  transform: translateX(-250px);
 }
 
 .appPreview__cardItem.css-tab__active {
   display: block;
+  opacity: 1;
+
+  transition: 0.7s linear;
+  transform: translateX(0px);
 }
 
 .appPreview__cardText {
