@@ -40,9 +40,9 @@ let tab = function () {
       } else {
         item.classList.remove("css-tab__active");
       }
-      //  item.classList.contains(tabName)
-      // ? item.classList.add("css-tab__active")
-      // : item.classList.remove("css-tab__active");
+      //   item.classList.contains(tabName)
+      //     ? item.classList.add("css-tab__active")
+      //     : item.classList.remove("css-tab__active");
     });
   }
 };
