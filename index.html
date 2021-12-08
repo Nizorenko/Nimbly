@@ -169,56 +169,56 @@
             <nav class="appPreview__nav">
               <ul class="appPreview__navList">
                 <li class="appPreview__navItem">
-                  <a class="appPreview__navLink" href="#Audits">
+                  <button type="button" data__number="tab-1" class="appPreview__navBtn js-tab__navBtn css-tab__active">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#real-time-icon"></use>
                     </svg>
                     <span class="appPreview__navName">Real-time Audits</span>
-                  </a>
+                  </button>
                 </li>
 
-                <li class="appPreview__navItem">
-                  <a class="appPreview__navLink" href="#Easy">
+                <li class="appPreview__navItem js-tab__navItem">
+                  <button type="button" data__number="tab-2" class="appPreview__navBtn js-tab__navBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#audits-icon"></use>
                     </svg>
                     <span class="appPreview__navName">Easy Digital Audits</span>
-                  </a>
+                  </button>
                 </li>
 
                 <li class="appPreview__navItem">
-                  <a class="appPreview__navLink" href="#Issue">
+                  <button type="button" data__number="tab-3" class="appPreview__navBtn js-tab__navBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#issue-icon"></use>
                     </svg>
                     <span class="appPreview__navName">Issue Tracker</span>
-                  </a>
+                  </button>
                 </li>
 
                 <li class="appPreview__navItem">
-                  <a class="appPreview__navLink" href="#Robust">
+                  <button type="button" data__number="tab-4" class="appPreview__navBtn js-tab__navBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#validation-icon"></use>
                     </svg>
                     <span class="appPreview__navName">Robust Validation</span>
-                  </a>
+                  </button>
                 </li>
 
                 <li class="appPreview__navItem">
-                  <a class="appPreview__navLink" href="#Report">
+                  <button type="button" data__number="tab-5" class="appPreview__navBtn js-tab__navBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#analytics-icon"></use>
                     </svg>
                     <span class="appPreview__navName">Report & Analytics</span>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </nav>
 
             <!-- Карточка элемента списка -->
-            <div class="js-appPreview__swiper appPreview__card">
-              <ul class="appPreview__cardList swiper-wrapper">
-                <li class="appPreview__cardItem swiper-slide">
+            <div class="appPreview__card">
+              <ul class="appPreview__cardList">
+                <li class="appPreview__cardItem js-tab__contentItem css-tab__active tab-1">
                   <div class="appPreview__cardBox" id="Audits">
                     <p class="appPreview__cardText">
                       You can optimize inspections with visual promoting guides to ensure products and services are
@@ -234,11 +234,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem swiper-slide">
+                <li class="appPreview__cardItem js-tab__contentItem tab-2">
                   <div class="appPreview__cardBox" id="Easy">
                     <p class="appPreview__cardText">
                       By using our issue tracker and resolution monitoring technologies, all your problems will be
-                      resolved according to your SLA. <a href="">Learn more.</a>
+                      resolved according to your SLA. <a class="css-color" href="">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -250,11 +250,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem swiper-slide">
+                <li class="appPreview__cardItem js-tab__contentItem tab-3">
                   <div class="appPreview__cardBox" id="Issue">
                     <p class="appPreview__cardText">
-                      By using our issue tracker and resolution monitoring technologies, all your problems will be
-                      resolved according to your SLA. <a href="">Learn more.</a>
+                      You can optimize inspections with visual promoting guides to ensure products and services are
+                      being delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -266,11 +266,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem swiper-slide">
+                <li class="appPreview__cardItem js-tab__contentItem tab-4">
                   <div class="appPreview__cardBox" id="Robust">
                     <p class="appPreview__cardText">
                       By using our issue tracker and resolution monitoring technologies, all your problems will be
-                      resolved according to your SLA. <a href="">Learn more.</a>
+                      resolved according to your SLA. <a class="css-color" href="">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -282,11 +282,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem swiper-slide">
+                <li class="appPreview__cardItem js-tab__contentItem tab-5">
                   <div class="appPreview__cardBox" id="Report">
                     <p class="appPreview__cardText">
-                      By using our issue tracker and resolution monitoring technologies, all your problems will be
-                      resolved according to your SLA. <a href="">Learn more.</a>
+                      You can optimize inspections with visual promoting guides to ensure products and services are
+                      being delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -900,7 +900,7 @@
     <script src="./js/anime.min.js"></script>
     <script src="./js/popupEntrance.js"></script>
     <script src="./js/header.js"></script>
-    <script src="./js/swiperAppPreview.js"></script>
+    <script src="./js/tabsAppPreview.js"></script>
     <script src="./js/accordionComments.js"></script>
     <script src="./js/swiperComments.js"></script>
   </body>

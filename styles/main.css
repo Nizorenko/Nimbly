@@ -180,7 +180,6 @@
 }
 
 .appPreview__card {
-  overflow: hidden;
   margin-bottom: 50px;
 }
 
@@ -211,7 +210,7 @@
   padding: 0 15px;
 }
 
-.appPreview__navLink {
+.appPreview__navBtn {
   display: grid;
   grid-template-columns: auto auto;
   gap: 8px;
@@ -226,17 +225,21 @@
 
   text-transform: capitalize;
   color: #333333;
-  text-decoration: none;
+
+  background-color: #dcf3e5;
+  border: none;
+  cursor: pointer;
+  border-radius: 75px;
 }
 
-.appPreview__navLink:hover {
+.appPreview__navBtn:hover {
   color: #13ab4e;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
   border-radius: 75px;
   background: rgba(255, 255, 255, 1);
 }
 
-.appPreview__navLink:focus {
+.appPreview__navBtn.css-tab__active {
   color: #13ab4e;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
   border-radius: 75px;
@@ -244,6 +247,16 @@
 }
 
 /* Карточка элемента списка */
+.appPreview__cardList {
+}
+
+.appPreview__cardItem {
+  display: none;
+}
+
+.appPreview__cardItem.css-tab__active {
+  display: block;
+}
 
 .appPreview__cardText {
   margin-left: 80px;
