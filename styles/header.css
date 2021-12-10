@@ -180,7 +180,7 @@
 
   /* Прячет header в мобильной версии */
 
-  .hide {
+  .hideNav {
     transform: translateY(-70px);
   }
 
@@ -229,15 +229,15 @@
 
   /* Открывает header__nav */
 
-  .header__burgerMenu._active span {
+  .header__burgerMenu.isOpenNav span {
     transform: scale(0) translate(0px, -50%);
   }
-  .header__burgerMenu._active::before {
+  .header__burgerMenu.isOpenNav::before {
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
   }
 
-  .header__burgerMenu._active::after {
+  .header__burgerMenu.isOpenNav::after {
     top: 50%;
     transform: rotate(45deg) translate(0px, 50%);
   }
@@ -267,7 +267,7 @@
     z-index: 4;
   }
 
-  ._active {
+  .isOpenNav {
     top: 0;
   }
 }

@@ -1,6 +1,6 @@
 "use strict";
 
-const swiperPhoto = new Swiper(".js-swiper__photo", {
+const swiperPhoto = new Swiper(".js-swiperPhoto", {
   autoHeight: true,
   loop: true,
   simulateTouch: false,
@@ -24,7 +24,7 @@ const swiperPhoto = new Swiper(".js-swiper__photo", {
   },
 });
 
-const swiperText = new Swiper(".js-swiper__text", {
+const swiperText = new Swiper(".js-swiperText", {
   navigation: {
     prevEl: ".comments-arrow-prev",
     nextEl: ".comments-arrow-next",

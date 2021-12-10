@@ -2,55 +2,46 @@
 
 // Таб appPreview
 
-let tab = function () {
-  // Создаём переменные с колекцией навигации и колекцией карточек,
-  // так же создаём переменную для переключения навигации и контента.
+// Создаём переменные с колекцией навигации и колекцией карточек,
+// так же создаём переменную для переключения навигации и контента.
 
-  let tabNav = document.querySelectorAll(".js-tab__navBtn"),
-    tabContent = document.querySelectorAll(".js-tab__contentItem"),
-    tabName;
+const tabNav = document.querySelectorAll(".js-tabBtn");
+const tabContent = document.querySelectorAll(".js-tabContent");
+let tabName;
 
-  //Добавляем слушатель "click" на каждый элемент в коллекции
+//Добавляем слушатель "click" на каждый элемент в коллекции
 
-  tabNav.forEach((item) => {
-    item.addEventListener("click", selectTabNav);
+tabNav.forEach((item, i) => {
+  item.addEventListener("click", selectTabNav);
+});
+
+function selectTabNav() {
+  // Убираем класс isOpenTab у всех элементов
+
+  tabNav.forEach((item, index) => {
+    item.classList.remove("isOpenTab");
   });
 
-  function selectTabNav() {
-    // Убираем класс css-tab__active у всех элементов
+  // Добовляем класс isOpenTab у элемента на котороый нажали this
 
-    tabNav.forEach((item) => {
-      item.classList.remove("css-tab__active");
-    });
+  this.classList.add("isOpenTab");
 
-    // Добовляем класс css-tab__active у элемента на котороый нажали this
+  // Добовляем в переменную tabName номер атрибута по которому кликнули
 
-    this.classList.add("css-tab__active");
+  tabName = this.getAttribute("data__number");
 
-    // Добовляем в переменную tabName номер атрибута по которому кликнули
+  selectTabContent(tabName);
+}
 
-    tabName = this.getAttribute("data__number");
-    console.log(tabName);
-    selectTabContent(tabName);
-  }
-
-  function selectTabContent(tabName) {
-    tabContent.forEach((item) => {
-      if (item.classList.contains(tabName)) {
-        item.classList.add("css-tab__active");
-      } else {
-        item.classList.remove("css-tab__active");
-      }
-      //   item.classList.contains(tabName)
-      //     ? item.classList.add("css-tab__active")
-      //     : item.classList.remove("css-tab__active");
-    });
-  }
-};
-
-tab();
-
-// anime({
-//   targets: ".appPreview__cardItem",
-//   translateX: 0,
-// });
+function selectTabContent(tabName) {
+  tabContent.forEach((item) => {
+    if (item.classList.contains(tabName)) {
+      item.classList.add("isOpenTab");
+    } else {
+      item.classList.remove("isOpenTab");
+    }
+    //   item.classList.contains(tabName)
+    //     ? item.classList.add("isOpenTab")
+    //     : item.classList.remove("isOpenTab");
+  });
+}

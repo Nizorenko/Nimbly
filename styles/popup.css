@@ -20,13 +20,7 @@
   transition: all 0.5s ease 0s;
 }
 
-.popupEntrance.open {
-  z-index: 10;
-  opacity: 1;
-  visibility: visible;
-}
-
-.popupEntrance.open .popupEntrance__content {
+.popupEntrance.isOpenPopup .popupEntrance__content {
   visibility: visible;
   opacity: 1;
   transform: translate(0, 0);
@@ -125,4 +119,14 @@
 .popupEntrance__linkPhone:hover,
 .popupEntrance__linkEmail:hover {
   text-decoration: underline;
+}
+
+.isLockSkroll {
+  overflow: hidden;
+}
+
+.isOpenPopup {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
 }

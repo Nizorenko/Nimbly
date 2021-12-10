@@ -9,9 +9,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-body._lock {
-  overflow: hidden;
-}
 
 .section {
   padding-top: 50px;
@@ -130,18 +127,18 @@ ul {
   transition: 0.2s linear;
 }
 
-.css-btn {
+.btnColor {
   background-color: #13ab4e;
   color: #ffffff;
 }
 
-.css-btn:hover {
+.btnColor:hover {
   box-shadow: inset 0 0 0 1px #13ab4e;
   background-color: #ffffff;
   color: #13ab4e;
 }
 
-.css-color {
+.itemColor {
   color: #13ab4e;
 }
 

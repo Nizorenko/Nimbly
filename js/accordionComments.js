@@ -18,7 +18,7 @@ const animatedClose = (contentElement, duration = 500) => {
 };
 const initAcordion = (
   rootSelector,
-  { duration, element = "js-accordion__item", button = "js-acordion__button", content = "js-accordion__content" }
+  { duration, element = "js-accordionItem", button = "js-acordionButton", content = "js-accordionContent" }
 ) => {
   const root = document.querySelector(`.${rootSelector}`);
 
@@ -26,6 +26,7 @@ const initAcordion = (
     throw new Error("Root element cannot be find");
   }
   const acordionItems = root.querySelectorAll(`.${element}`);
+  console.log(acordionItems);
   if (!acordionItems) {
     throw new Error("itemSelector element cannot be find");
   }
@@ -34,14 +35,14 @@ const initAcordion = (
       const contentElement = el.querySelector(`.${content}`);
       if (contentElement) {
         if (index === i) {
-          el.classList.toggle("is-open");
-          if (el.classList.contains("is-open")) {
+          el.classList.toggle("isOpen");
+          if (el.classList.contains("isOpen")) {
             animatedOpen(contentElement, duration);
           } else {
             animatedClose(contentElement, duration);
           }
-        } else if (el.classList.contains("is-open")) {
-          el.classList.remove("is-open");
+        } else if (el.classList.contains("isOpen")) {
+          el.classList.remove("isOpen");
           animatedClose(contentElement, duration);
         }
       }

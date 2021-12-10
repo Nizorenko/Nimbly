@@ -2,46 +2,46 @@
 
 // Открывает и закрывает hedaer__entrance ПК И Mobile версия.
 
-const btnLoginPC = document.querySelector(".hedaer__entrance");
-const btnLoginMobail = document.querySelector(".header__iconMobil");
-const popup = document.querySelector(".popupEntrance");
-const popup__body = document.querySelector(".popupEntrance__body");
-const valuePadding = window.innerWidth - document.querySelector(".js-value__padding").offsetWidth + "px";
-const menu_nav_header = document.querySelector(".header__section");
+const btnLoginPC = document.querySelector(".js-entranceBtn");
+const btnLoginMobail = document.querySelector(".js-iconMobail");
+const popup = document.querySelector(".js-entrance");
+const popupBody = document.querySelector(".js-entranceBody");
+const valuePadding = window.innerWidth - document.querySelector(".js-valuePadding").offsetWidth + "px";
+const padding = document.querySelector(".js-header");
 
 if (btnLoginPC && btnLoginMobail) {
   btnLoginPC.addEventListener("click", function (e) {
-    document.body.classList.add("_lock");
-    popup.classList.add("open");
+    document.body.classList.add("isLockSkroll");
+    popup.classList.add("isOpenPopup");
 
     if (valuePadding) {
       document.body.style.paddingRight = valuePadding;
     }
     if (isMobail.any()) {
-      menu_nav_header.style.paddingRight = valuePadding;
+      padding.style.paddingRight = valuePadding;
     }
   });
 
   btnLoginMobail.addEventListener("click", function (e) {
-    document.body.classList.add("_lock");
-    popup.classList.add("open");
+    document.body.classList.add("isLockSkroll");
+    popup.classList.add("isOpenPopup");
 
     if (valuePadding) {
       document.body.style.paddingRight = valuePadding;
-      menu_nav_header.style.paddingRight = valuePadding;
+      padding.style.paddingRight = valuePadding;
     }
   });
 }
 
-if (popup && popup__body) {
+if (popup && popupBody) {
   popup.addEventListener("click", function (e) {
-    if (e.target == popup || e.target == popup__body) {
-      document.body.classList.remove("_lock");
-      popup.classList.remove("open");
+    if (e.target == popup || e.target == popupBody) {
+      document.body.classList.remove("isLockSkroll");
+      popup.classList.remove("isOpenPopup");
 
       if (valuePadding) {
         document.body.style.paddingRight = "0px";
-        menu_nav_header.style.paddingRight = "0px";
+        padding.style.paddingRight = "0px";
       }
     }
   });

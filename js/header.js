@@ -23,34 +23,34 @@ const myMobile = {
 
 //Открывыет, закрывает панель навигации в мобильной версии.
 
-const menuNav = document.querySelector(".header__nav");
-const iconMenu = document.querySelector(".header__burgerMenu");
+const menuNav = document.querySelector(".js-headerNav");
+const iconMenu = document.querySelector(".js-burgerMenu");
 
 if (iconMenu) {
   iconMenu.addEventListener("click", function (e) {
-    menuNav.classList.toggle("_active");
-    iconMenu.classList.toggle("_active");
+    menuNav.classList.toggle("isOpenNav");
+    iconMenu.classList.toggle("isOpenNav");
   });
 }
 
 // Убирает при скроле панель навигации а так же меню навигации при скроле вверх вниз
 
 let lastScroll = 0;
-const header = document.querySelector(".header__section");
+const header = document.querySelector(".js-header");
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
-const containHide = () => header.classList.contains("hide");
+const containHide = () => header.classList.contains("hideNav");
 
 window.addEventListener("scroll", () => {
   if (scrollPosition() > lastScroll && !containHide() && scrollPosition() && myMobile.any()) {
-    menuNav.classList.remove("_active");
-    iconMenu.classList.remove("_active");
-    header.classList.add("hide");
+    menuNav.classList.remove("isOpenNav");
+    iconMenu.classList.remove("isOpenNav");
+    header.classList.add("hideNav");
   } else if (scrollPosition() < lastScroll && containHide()) {
-    header.classList.remove("hide");
+    header.classList.remove("hideNav");
   } else {
-    menuNav.classList.remove("_active");
-    iconMenu.classList.remove("_active");
+    menuNav.classList.remove("isOpenNav");
+    iconMenu.classList.remove("isOpenNav");
   }
 
   lastScroll = scrollPosition();

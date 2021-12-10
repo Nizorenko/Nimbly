@@ -17,17 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
   </head>
-  <body class="js-value__padding">
-    <header class="header__section">
+  <body class="js-valuePadding">
+    <header class="header__section js-header">
       <div class="container">
         <div class="header">
           <a class="header__logo" href="#"><img src="./images/nimbly-logo.png" alt="Logo company" /></a>
-          <button class="header__iconMobil" type="button">
+          <button class="header__iconMobil js-iconMobail" type="button">
             <svg width="30" height="30">
               <use href="./images/icons.svg#frame-icon"></use>
             </svg>
           </button>
-          <nav class="header__nav">
+          <nav class="header__nav js-headerNav">
             <ul class="header__list">
               <li><a class="header__link" href="#">Features</a></li>
 
@@ -41,21 +41,21 @@
 
               <li><a class="header__link" href="#">Insight</a></li>
             </ul>
-            <a class="header__btn btn css-btn" href="#request-form">Request Demo</a>
+            <a class="header__btn btn btnColor" href="#request-form">Request Demo</a>
           </nav>
 
           <div class="header__user">
-            <button class="hedaer__entrance" type="button">
+            <button class="hedaer__entrance js-entranceBtn" type="button">
               <svg width="24" height="24">
                 <use href="./images/icons.svg#frame-icon"></use>
               </svg>
               Sign In
             </button>
 
-            <a class="hedaer__feedback btn css-btn" href="#request-form" type="button">Request Demo</a>
+            <a class="hedaer__feedback btn btnColor" href="#request-form" type="button">Request Demo</a>
           </div>
 
-          <button class="header__burgerMenu" type="button">
+          <button class="header__burgerMenu js-burgerMenu" type="button">
             burger menu
             <span></span>
           </button>
@@ -72,7 +72,7 @@
             <div class="companyOverview__left">
               <div class="companyOverview__about">
                 <h1 class="companyOverview__title">
-                  Make your operations Easier and Efficient with <span class="css-color">Nimbly</span>
+                  Make your operations Easier and Efficient with <span class="itemColor">Nimbly</span>
                 </h1>
                 <p class="companyOverview__text">
                   Digitize your business operations and gain real-time analytics on your team progress anytime,
@@ -80,7 +80,7 @@
                 </p>
               </div>
               <div class="companyOverview__btn">
-                <a class="companyOverview__btnForm btn css-btn" type="button" href="#request-form"> Request Demo </a>
+                <a class="companyOverview__btnForm btn btnColor" type="button" href="#request-form"> Request Demo </a>
                 <a class="companyOverview__btnCall" href="tel:+79228784286">
                   <svg class="companyOverview__iconCall" width="24" height="24">
                     <use href="./images/icons.svg#phone-icon"></use>
@@ -169,7 +169,7 @@
             <nav class="appPreview__nav">
               <ul class="appPreview__navList">
                 <li class="appPreview__navItem">
-                  <button type="button" data__number="tab-1" class="appPreview__navBtn js-tab__navBtn css-tab__active">
+                  <button type="button" data__number="tab-1" class="appPreview__navBtn js-tabBtn isOpenTab">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#real-time-icon"></use>
                     </svg>
@@ -178,7 +178,7 @@
                 </li>
 
                 <li class="appPreview__navItem js-tab__navItem">
-                  <button type="button" data__number="tab-2" class="appPreview__navBtn js-tab__navBtn">
+                  <button type="button" data__number="tab-2" class="appPreview__navBtn js-tabBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#audits-icon"></use>
                     </svg>
@@ -187,7 +187,7 @@
                 </li>
 
                 <li class="appPreview__navItem">
-                  <button type="button" data__number="tab-3" class="appPreview__navBtn js-tab__navBtn">
+                  <button type="button" data__number="tab-3" class="appPreview__navBtn js-tabBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#issue-icon"></use>
                     </svg>
@@ -196,7 +196,7 @@
                 </li>
 
                 <li class="appPreview__navItem">
-                  <button type="button" data__number="tab-4" class="appPreview__navBtn js-tab__navBtn">
+                  <button type="button" data__number="tab-4" class="appPreview__navBtn js-tabBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#validation-icon"></use>
                     </svg>
@@ -205,7 +205,7 @@
                 </li>
 
                 <li class="appPreview__navItem">
-                  <button type="button" data__number="tab-5" class="appPreview__navBtn js-tab__navBtn">
+                  <button type="button" data__number="tab-5" class="appPreview__navBtn js-tabBtn">
                     <svg class="appPreview__navIcon" width="32" height="32">
                       <use href="./images/icons.svg#analytics-icon"></use>
                     </svg>
@@ -218,11 +218,11 @@
             <!-- Карточка элемента списка -->
             <div class="appPreview__card">
               <ul class="appPreview__cardList">
-                <li class="appPreview__cardItem js-tab__contentItem css-tab__active tab-1">
+                <li class="appPreview__cardItem js-tabContent isOpenTab tab-1">
                   <div class="appPreview__cardBox" id="Audits">
                     <p class="appPreview__cardText">
                       You can optimize inspections with visual promoting guides to ensure products and services are
-                      being delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
+                      being delivered consistently across the company.<a class="itemColor" href="#">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -234,11 +234,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem js-tab__contentItem tab-2">
+                <li class="appPreview__cardItem js-tabContent tab-2">
                   <div class="appPreview__cardBox" id="Easy">
                     <p class="appPreview__cardText">
                       By using our issue tracker and resolution monitoring technologies, all your problems will be
-                      resolved according to your SLA. <a class="css-color" href="#">Learn more.</a>
+                      resolved according to your SLA. <a class="itemColor" href="#">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -250,11 +250,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem js-tab__contentItem tab-3">
+                <li class="appPreview__cardItem js-tabContent tab-3">
                   <div class="appPreview__cardBox" id="Issue">
                     <p class="appPreview__cardText">
                       You can optimize inspections with visual promoting guides to ensure products and services are
-                      being delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
+                      being delivered consistently across the company.<a class="itemColor" href="#">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -266,11 +266,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem js-tab__contentItem tab-4">
+                <li class="appPreview__cardItem js-tabContent tab-4">
                   <div class="appPreview__cardBox" id="Robust">
                     <p class="appPreview__cardText">
                       By using our issue tracker and resolution monitoring technologies, all your problems will be
-                      resolved according to your SLA. <a class="css-color" href="#">Learn more.</a>
+                      resolved according to your SLA. <a class="itemColor" href="#">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -282,11 +282,11 @@
                   </div>
                 </li>
 
-                <li class="appPreview__cardItem js-tab__contentItem tab-5">
+                <li class="appPreview__cardItem js-tabContent tab-5">
                   <div class="appPreview__cardBox" id="Report">
                     <p class="appPreview__cardText">
                       You can optimize inspections with visual promoting guides to ensure products and services are
-                      being delivered consistently across the company.<a class="css-color" href="#">Learn more.</a>
+                      being delivered consistently across the company.<a class="itemColor" href="#">Learn more.</a>
                     </p>
                     <img
                       class="appPreview__cardIllustration"
@@ -389,8 +389,8 @@
               <h2 class="companyProposal__title">Desk work or field work, we’ve covered</h2>
 
               <ul class="companyProposal__list js-accordion">
-                <li class="companyProposal__item js-accordion__item">
-                  <button class="companyProposal__button js-acordion__button" href="#">
+                <li class="companyProposal__item js-accordionItem">
+                  <button class="companyProposal__button js-acordionButton" href="#">
                     <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#food-icon"></use>
                     </svg>
@@ -400,7 +400,7 @@
                     </svg>
                   </button>
 
-                  <div class="companyProposal__content js-accordion__content" id="button">
+                  <div class="companyProposal__content js-accordionContent" id="button">
                     <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
@@ -408,8 +408,8 @@
                   </div>
                 </li>
 
-                <li class="companyProposal__item js-accordion__item">
-                  <button class="companyProposal__button js-acordion__button" href="#">
+                <li class="companyProposal__item js-accordionItem">
+                  <button class="companyProposal__button js-acordionButton" href="#">
                     <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#shop-icon"></use>
                     </svg>
@@ -419,7 +419,7 @@
                     </svg>
                   </button>
 
-                  <div class="companyProposal__content js-accordion__content">
+                  <div class="companyProposal__content js-accordionContent">
                     <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
@@ -427,8 +427,8 @@
                   </div>
                 </li>
 
-                <li class="companyProposal__item js-accordion__item">
-                  <button class="companyProposal__button js-acordion__button" href="#">
+                <li class="companyProposal__item js-accordionItem">
+                  <button class="companyProposal__button js-acordionButton" href="#">
                     <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#builder-icon"></use>
                     </svg>
@@ -438,7 +438,7 @@
                     </svg>
                   </button>
 
-                  <div class="companyProposal__content js-accordion__content">
+                  <div class="companyProposal__content js-accordionContent">
                     <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
@@ -446,8 +446,8 @@
                   </div>
                 </li>
 
-                <li class="companyProposal__item js-accordion__item">
-                  <button class="companyProposal__button js-acordion__button" href="#">
+                <li class="companyProposal__item js-accordionItem">
+                  <button class="companyProposal__button js-acordionButton" href="#">
                     <svg class="companyProposal__icon" width="33" height="32">
                       <use href="./images/icons.svg#flower-icon"></use>
                     </svg>
@@ -457,7 +457,7 @@
                     </svg>
                   </button>
 
-                  <div class="companyProposal__content js-accordion__content">
+                  <div class="companyProposal__content js-accordionContent">
                     <p class="companyProposal__text">
                       Businesses in more than 100 different industries track and automate with Nimbly. Businesses in
                       more than 100 different industries track and automate with Nimbly.
@@ -492,9 +492,9 @@
           <article class="commentCard">
             <!-- Первый слайдер -->
 
-            <div class="commentCard__photo js-swiper__photo">
+            <div class="commentCard__photo js-swiperPhoto">
               <ul class="commentCard__photoList swiper-wrapper">
-                <li class="commentCard__photoItem swiper-slide">
+                <li class="swiper-slide commentCard__photoItem">
                   <img
                     class="commentCard__photoUser"
                     src="./images/User_1.png"
@@ -544,7 +544,7 @@
 
             <!-- Второй слайдер -->
 
-            <div class="commentCard__text js-swiper__text">
+            <div class="commentCard__text js-swiperText">
               <ul class="commentCard__textList swiper-wrapper">
                 <li class="commentCard__textItem swiper-slide">
                   <div class="commentCard__textBox">
@@ -749,7 +749,7 @@
                   <option value="">5</option>
                 </select>
               </li>
-              <button type="submit" class="feedbackForm__button btn css-btn">Request Demo</button>
+              <button type="submit" class="feedbackForm__button btn btnColor">Request Demo</button>
 
               <!-- Можно так ваще?) -->
             </ul>
@@ -845,8 +845,8 @@
       </div>
     </footer>
 
-    <div class="popupEntrance">
-      <div class="popupEntrance__body">
+    <div class="popupEntrance js-entrance">
+      <div class="popupEntrance__body js-entranceBody">
         <div class="popupEntrance__content">
           <h3 class="popupEntrance__title">Need to deliver your cargo? We can help!</h3>
           <p class="popupEntrance__text">Fill a little form and we will call you back!</p>
@@ -880,7 +880,7 @@
               id="mail_user"
             />
           </form>
-          <button class="popupEntrance__button btn css-btn">Call me back</button>
+          <button class="popupEntrance__button btn btnColor">Call me back</button>
           <address class="popupEntrance__contacts">
             <span class="popupEntrance__titleAddress">Our address</span>
             <a class="popupEntrance__linkAddress" href="#">New York, Street, ZIP code</a>
