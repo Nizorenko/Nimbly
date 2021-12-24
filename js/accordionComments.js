@@ -26,15 +26,20 @@ const initAcordion = (
     throw new Error("Root element cannot be find");
   }
   const acordionItems = root.querySelectorAll(`.${element}`);
-  console.log(acordionItems);
+
   if (!acordionItems) {
     throw new Error("itemSelector element cannot be find");
   }
   const handler = (event, index) => {
+    console.log(index);
     acordionItems.forEach((el, i) => {
+      // console.log(i);
+
       const contentElement = el.querySelector(`.${content}`);
       if (contentElement) {
         if (index === i) {
+          console.log(index === i);
+          console.log(i);
           el.classList.toggle("isOpen");
           if (el.classList.contains("isOpen")) {
             animatedOpen(contentElement, duration);

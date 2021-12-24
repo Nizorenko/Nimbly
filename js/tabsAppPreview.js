@@ -11,20 +11,22 @@ let tabName;
 
 //Добавляем слушатель "click" на каждый элемент в коллекции
 
-tabNav.forEach((item, i) => {
+tabNav.forEach((item, e) => {
   item.addEventListener("click", selectTabNav);
 });
 
-function selectTabNav() {
+function selectTabNav(e) {
   // Убираем класс isOpenTab у всех элементов
 
-  tabNav.forEach((item, index) => {
+  tabNav.forEach((item) => {
     item.classList.remove("isOpenTab");
   });
-
+  // const loli = e.target;
+  // console.log(loli);
   // Добовляем класс isOpenTab у элемента на котороый нажали this
-
+  // if (loli === this) {
   this.classList.add("isOpenTab");
+  // }
 
   // Добовляем в переменную tabName номер атрибута по которому кликнули
 
@@ -34,7 +36,7 @@ function selectTabNav() {
 }
 
 function selectTabContent(tabName) {
-  tabContent.forEach((item) => {
+  tabContent.forEach((item, index) => {
     if (item.classList.contains(tabName)) {
       item.classList.add("isOpenTab");
     } else {

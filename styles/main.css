@@ -263,7 +263,7 @@
 .appPreview__cardItem.isOpenTab {
   display: block;
   opacity: 1;
-
+  z-index: 1;
   transition: 0.7s linear;
   transform: translateX(0px);
 }
@@ -437,6 +437,7 @@
   cursor: pointer;
   justify-items: start;
   width: 100%;
+  cursor: pointer;
 }
 
 .companyProposal__arrow {
@@ -455,7 +456,11 @@
   margin-right: 18px;
 }
 
-.Steps-work-2_link:hover {
+.companyProposal__button:hover {
+  color: #13ab4e;
+}
+
+.isOpen .companyProposal__button {
   color: #13ab4e;
 }
 
